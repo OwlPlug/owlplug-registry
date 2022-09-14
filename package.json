@@ -1,0 +1,14 @@
+{
+  "name": "owlplug-registry",
+  "version": "1.0.0",
+  "description": "OwlPlug Registry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Poiret",
+  "license": "ISC",
+  "dependencies": {
+    "@owlplug/owlplug-registry-tools": "github:owlplug/owlplug-registry-tools"
+  }
+}
