@@ -53,28 +53,12 @@ jobs:
           BUNDLES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${bundles[@]}")
           echo "::set-output name=bundles::$BUNDLES_JSON"
 
+          mkdir -p ./pr-files
+          echo $BUNDLES_JSON > ./pr-files/bundles.json
 
-      - id: pr-bundles-download
-        name: "Download bundles files"
-        run: |
-          readarray -t bundles <<<"$(jq -r '.[]' <<<'${{ steps.pr-bundles.outputs.bundles }}')"
-          path=()
-          mkdir /tmp/bundles
-          for bundle in ${bundles[@]}; do
-            echo "Retrieving bundles ${bundle}."
-            wget  --directory-prefix /tmp/bundles ${bundle}
-          done
 
-          files=(/tmp/bundles/*) 
-
-          FILES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${files[@]}")
-          echo "::set-output name=paths::$FILES_JSON"
-
-      - name: debug
-        run: echo ${{ steps.pr-bundles-download.outputs.paths }}
-
-      - name: VirusTotal Scan
-        uses: crazy-max/ghaction-virustotal@v3
+      - uses: actions/upload-artifact@v3
         with:
-          vt_api_key: secret
-          files: "${{join(fromJSON(steps.pr-bundles-download.outputs.paths),'\n')}}"
+          name: bundles.json
+          path: pr-files/
+

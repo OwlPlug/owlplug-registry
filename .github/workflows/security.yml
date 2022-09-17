@@ -1,0 +1,68 @@
+name: Security
+
+on:
+  workflow_run:
+    workflows: ["Pre-Analysis"]
+    types:
+      - completed
+
+jobs:
+  antivirus:
+    runs-on: ubuntu-latest
+    if: >
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success'
+    steps:
+      - name: 'Download pre analysis artifacts'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: context.payload.workflow_run.id,
+            });
+            let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "bundles.json"
+            })[0];
+            let download = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            let fs = require('fs');
+            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/bundles.json.zip`, Buffer.from(download.data));
+
+      - name: 'Unzip artifact'
+        run: unzip bundles.json.zip
+
+      - name: Retrieve bundles url'
+        id: bundles-url
+        run: |
+          BUNDLES_JSON=$(cat bundles.json)
+          echo "$BUNDLES"
+          echo "::set-output name=bundles::$BUNDLES_JSON"
+
+      - name: "Download bundles files"
+        id: bundles-download
+        run: |
+          readarray -t bundles <<<"$(jq -r '.[]' <<<'${{ steps.bundles-url.outputs.bundles }}')"
+          path=()
+          mkdir /tmp/bundles
+          for bundle in ${bundles[@]}; do
+            echo "Retrieving bundles ${bundle}."
+            wget  --directory-prefix /tmp/bundles ${bundle}
+          done
+
+          files=(/tmp/bundles/*) 
+
+          FILES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${files[@]}")
+          echo "::set-output name=paths::$FILES_JSON"
+
+      - name: VirusTotal Scan
+        uses: crazy-max/ghaction-virustotal@v3
+        with:
+          vt_api_key: secret
+          files: "${{join(fromJSON(steps.bundles-download.outputs.paths),'\n')}}"
+
