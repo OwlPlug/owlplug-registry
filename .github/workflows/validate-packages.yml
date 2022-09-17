@@ -1,4 +1,4 @@
-name: Verify PR
+name: Validate Packages
 
 on:
   pull_request:
@@ -17,5 +17,8 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@owlplug'
-
+        
       - run: npm ci
+
+      - name: validate regitry
+        run: node index.js validate registry
