@@ -1,0 +1,29 @@
+---
+name: Wobbleizer
+slug: wobbleizer
+creator: Dropsnorz
+license: mit
+screenshotUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/wobbleizer.png
+description: A frequency filter with LFO modulation
+pageUrl: https://github.com/dropsnorz/wobbleizer
+version: 2.3.0.2
+technicalUid: '2003788408'
+type: effect
+stage: beta
+tags:
+- Filter
+- LFO
+bundles:
+- name: Wobx Win32/64
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip
+  fileSize: 2857000
+- name: Wobx Osx
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-osx.zip
+  fileSize: 3169000
