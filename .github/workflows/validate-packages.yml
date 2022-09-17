@@ -5,20 +5,34 @@ on:
     types: [opened, reopened, synchronize, ready_for_review]
 
 jobs:
-  build:
+  validate:
     if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     steps:        
       - uses: actions/checkout@v2
-
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-          registry-url: 'https://npm.pkg.github.com'
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@owlplug'
-        
+          node-version: '16'
       - run: npm ci
+      
+      - name: Registry state pre-validation
+        run: echo "Not yet implemented"
 
-      - name: validate regitry
+      - id: pr-changed-files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'json' 
+
+      - name: "Validate packages"
+        run: |
+          readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
+          for updated_file in ${updated_files[@]}; do
+            echo "Processing updated file: ${updated_file}."
+            if [[ ${updated_file} == *package.yaml ]]; then
+              echo "Validating package ${updated_file}."
+              # TODO : Add package validation by path
+            fi
+          done
+
+      - name: Registry validation
         run: node index.js validate registry
