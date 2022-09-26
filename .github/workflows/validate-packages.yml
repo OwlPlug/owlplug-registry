@@ -42,7 +42,7 @@ jobs:
           readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
           for package in ${packages[@]}; do
             echo "Validating package ${package}."
-            # TODO : Add package validation by path
+            node index.js validate package ${package}
           done
 
       - name: Registry validation
