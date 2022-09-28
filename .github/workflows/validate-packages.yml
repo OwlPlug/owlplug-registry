@@ -1,0 +1,49 @@
+name: Validate Packages
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+jobs:
+  validate:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    steps:        
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm ci
+
+      - name: Registry state pre-validation
+        run: echo "Not yet implemented"
+
+      - id: pr-changed-files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'json' 
+
+      - id: pr-updated-packages
+        name: "Retrieve updated packages"
+        run: |
+          readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
+          packages=()
+          for updated_file in ${updated_files[@]}; do
+            echo "Processing updated file: ${updated_file}."
+            if [[ ${updated_file} == *package.yaml ]]; then
+              packages+=("${updated_file}")
+            fi
+          done
+          PACKAGES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${packages[@]}")
+          echo "::set-output name=packages::$PACKAGES_JSON"
+
+      - name: "Validate packages"
+        run: |
+          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
+          for package in ${packages[@]}; do
+            echo "Validating package ${package}."
+            node index.js validate package ${package}
+          done
+
+      - name: Registry validation
+        run: node index.js validate registry

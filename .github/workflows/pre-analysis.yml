@@ -1,0 +1,64 @@
+name: Pre-Analysis
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+jobs:
+  packages:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    steps:        
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm ci
+
+      - id: pr-changed-files
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'json' 
+
+      - id: pr-updated-packages
+        name: "Retrieve updated packages"
+        run: |
+          readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
+          packages=()
+          for updated_file in ${updated_files[@]}; do
+            echo "Processing updated file: ${updated_file}."
+            if [[ ${updated_file} == *package.yaml ]]; then
+              packages+=("${updated_file}")
+            fi
+          done
+          PACKAGES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${packages[@]}")
+          echo "::set-output name=packages::$PACKAGES_JSON"
+
+      - id: pr-bundles
+        name: "Retrieve bundles files"
+        run: |
+          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
+          bundles=()
+          for package in ${packages[@]}; do
+            echo "Retrieving bundles for package ${package}."
+            echo $(yq -e '.bundles[].downloadUrl' ${package})
+
+            readarray -t package_bundles <<<"$(yq -e '.bundles[].downloadUrl' ${package})"
+            for bundle in ${package_bundles[@]}; do
+              bundles+=("${bundle}")
+              echo " Adding bundle ${bundle} for analysis"
+            done
+          done
+
+          BUNDLES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${bundles[@]}")
+          echo "::set-output name=bundles::$BUNDLES_JSON"
+
+          mkdir -p ./pr-files
+          echo $BUNDLES_JSON > ./pr-files/bundles.json
+
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: bundles.json
+          path: pr-files/
+
