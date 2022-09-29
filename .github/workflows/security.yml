@@ -17,13 +17,15 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
+            const fs = require('fs');
             let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
                owner: context.repo.owner,
                repo: context.repo.repo,
                run_id: context.payload.workflow_run.id,
             });
+
             let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
-              return artifact.name == "bundles.json"
+              return artifact.name == "pr-artifacts"
             })[0];
             let download = await github.rest.actions.downloadArtifact({
                owner: context.repo.owner,
@@ -31,11 +33,10 @@ jobs:
                artifact_id: matchArtifact.id,
                archive_format: 'zip',
             });
-            let fs = require('fs');
-            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/bundles.json.zip`, Buffer.from(download.data));
+            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/pr-artifacts.zip`, Buffer.from(download.data));
 
-      - name: 'Unzip artifact'
-        run: unzip bundles.json.zip
+      - name: 'Unzip artifacts'
+        run: unzip pr-artifacts.zip
 
       - name: Retrieve bundles url'
         id: bundles-url
@@ -43,6 +44,13 @@ jobs:
           BUNDLES_JSON=$(cat bundles.json)
           echo "$BUNDLES"
           echo "::set-output name=bundles::$BUNDLES_JSON"
+
+      - name: Retrieve PR number'
+        id: pr-number
+        run: |
+          PR_NUMBER=$(cat pr-number)
+          echo "$PR_NUMBER"
+          echo "::set-output name=pr-number::$PR_NUMBER"
 
       - name: "Download bundles files"
         id: bundles-download
@@ -61,8 +69,26 @@ jobs:
           echo "::set-output name=paths::$FILES_JSON"
 
       - name: VirusTotal Scan
+        id: vt-scan
         uses: crazy-max/ghaction-virustotal@v3
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: "${{join(fromJSON(steps.bundles-download.outputs.paths),'\n')}}"
 
+      - uses: actions/github-script@v5
+        env:
+          VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
+          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { VT_OUTPUT, PR_NUMBER } = process.env
+
+            github.rest.issues.createComment({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `:triangular_flag_on_post: **Virus Total Analysis Report**
+
+                ${VT_OUTPUT}`
+            })

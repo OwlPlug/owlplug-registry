@@ -53,12 +53,14 @@ jobs:
           BUNDLES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${bundles[@]}")
           echo "::set-output name=bundles::$BUNDLES_JSON"
 
-          mkdir -p ./pr-files
-          echo $BUNDLES_JSON > ./pr-files/bundles.json
+          mkdir -p ./pr-artifacts
+          echo $BUNDLES_JSON > ./pr-artifacts/bundles.json
 
+      - name: Save PR number
+        run: |
+          echo ${{ github.event.number }} > ./pr-artifacts/pr-number
 
       - uses: actions/upload-artifact@v3
         with:
-          name: bundles.json
-          path: pr-files/
-
+          name: pr-artifacts
+          path: pr-artifacts/

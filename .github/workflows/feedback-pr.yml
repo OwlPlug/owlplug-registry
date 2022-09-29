@@ -4,13 +4,68 @@ on:
     types: [completed]
 
 jobs:
-  on-success:
+  feedback:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - run: echo 'The triggering workflow passed'
-  on-failure:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-    steps:
-      - run: echo 'The triggering workflow failed'
+      - name: 'Download pre analysis artifacts'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            let allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: context.payload.workflow_run.id,
+            });
+            let matchArtifact = allArtifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "pr-artifacts"
+            })[0];
+            let download = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/pr-artifacts.zip`, Buffer.from(download.data));
+
+      - name: 'Unzip artifacts'
+        run: unzip pr-artifacts.zip
+
+      - name: Retrieve PR number'
+        id: pr-number
+        run: |
+          PR_NUMBER=$(cat pr-number)
+          echo "$PR_NUMBER"
+          echo "::set-output name=pr-number::$PR_NUMBER"
+
+      - uses: actions/github-script@v5
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        env:
+          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { PR_NUMBER } = process.env
+            github.rest.issues.createComment({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ':white_check_mark: Packages has been verified and are valid'
+            })
+  
+      - uses: actions/github-script@v5
+        if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+        env:
+          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { PR_NUMBER } = process.env
+            github.rest.issues.createComment({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ':x: Packages has been verified and are flagged as invalid'
+            })
+
