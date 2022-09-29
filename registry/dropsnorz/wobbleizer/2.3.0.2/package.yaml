@@ -21,7 +21,7 @@ bundles:
   format: vst
   downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip
   downloadSha256: 35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd
-  fileSize: 2858000
+  fileSize: 2857000
 - name: Wobx Osx
   targets:
   - osx

@@ -47,3 +47,13 @@ jobs:
 
       - name: Registry validation
         run: node index.js validate registry
+
+      - name: Save PR number
+        run: |
+          mkdir ./pr-artifacts
+          echo ${{ github.event.number }} > ./pr-artifacts/pr-number
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pr-artifacts
+          path: pr-artifacts/
