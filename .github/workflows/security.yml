@@ -84,11 +84,23 @@ jobs:
           script: |
             const { VT_OUTPUT, PR_NUMBER } = process.env
 
+            // Abort script if VT_OUTPUT is empty, null or undefined
+            if (!VT_OUTPUT) {
+              return;
+            }
+
+            let markdown = ""
+            let files = VT_OUTPUT.split(",")
+
+            for (let file of files) {
+              markdown += "* " + file.replace("=https://", ": https://") + "\n";
+            }
+
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `:triangular_flag_on_post: **Virus Total Analysis Report**
+              body: `:shield: **Virus Total Analysis Report**
 
-                ${VT_OUTPUT}`
+                ${markdown}`
             })
