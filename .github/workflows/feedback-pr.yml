@@ -1,3 +1,4 @@
+name: Validation Feedback
 on:
   workflow_run:
     workflows: [Validate Packages]
