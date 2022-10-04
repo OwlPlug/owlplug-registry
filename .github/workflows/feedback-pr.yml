@@ -1,3 +1,4 @@
+name: Validation Feedback
 on:
   workflow_run:
     workflows: [Validate Packages]
@@ -40,32 +41,58 @@ jobs:
           echo "::set-output name=pr-number::$PR_NUMBER"
 
       - uses: actions/github-script@v5
+        name: Sanitize validation logs
+        id: sanitize-validate-log
+        script: |
+          const fs = require('fs')
+          let validateLog = fs.readFileSync('validate.log')
+          return validateLog.replace("`", "").replace("~", "")
+
+      - uses: actions/github-script@v5
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         env:
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+          VALIDATE_LOG : ${{ steps.sanitize-validate-log.outputs.result }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const { PR_NUMBER } = process.env
+            const { PR_NUMBER, VALIDATE_LOG } = process.env
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: ':white_check_mark: Packages has been verified and are valid'
+              body: `:white_check_mark: Packages has been verified and are valid
+              
+              <details>
+                <summary>View validation details</summary>
+                ~~~
+                ${VALIDATE_LOG}
+                ~~~
+              </details>
+              `
             })
   
       - uses: actions/github-script@v5
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         env:
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+          VALIDATE_LOG : ${{ steps.sanitize-validate-log.outputs.result }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const { PR_NUMBER } = process.env
+            const { PR_NUMBER, VALIDATE_LOG } = process.env
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: ':x: Packages has been verified and are flagged as invalid'
+              body: `:x: Packages has been verified and are flagged as invalid
+
+              <details>
+                <summary>View validation details</summary>
+                ~~~
+                ${VALIDATE_LOG}
+                ~~~
+              </details>
+              `
             })
 

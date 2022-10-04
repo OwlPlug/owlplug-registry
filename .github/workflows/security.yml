@@ -38,6 +38,27 @@ jobs:
       - name: 'Unzip artifacts'
         run: unzip pr-artifacts.zip
 
+      - name: 'Verify bundles.json file and URL format'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs')
+
+            const validateUrl = function (str) {
+              let urlRegex = '^(https?)://[^\s/$.?#].[^\s]*$';
+              let url = new RegExp(urlRegex, 'i');
+              if (!url.test(str)) {
+                throw new Error(`Invalid url : ${str}`)
+              }
+            }
+
+            let rawBundles = fs.readFileSync('bundles.json')
+            let bundles = JSON.parse(rawBundles)
+
+            for(let bundle of bundles) {
+              validateUrl(bundle)
+            }
+
       - name: Retrieve bundles url'
         id: bundles-url
         run: |
@@ -101,6 +122,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: `:shield: **Virus Total Analysis Report**
-
-                ${markdown}`
+            ${markdown}`
             })
