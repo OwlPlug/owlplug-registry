@@ -43,10 +43,11 @@ jobs:
       - uses: actions/github-script@v5
         name: Sanitize validation logs
         id: sanitize-validate-log
-        script: |
-          const fs = require('fs')
-          let validateLog = fs.readFileSync('validate.log')
-          return validateLog.replace("`", "").replace("~", "")
+        with:
+          script: |
+            const fs = require('fs')
+            let validateLog = fs.readFileSync('validate.log')
+            return validateLog.replace("`", "").replace("~", "")
 
       - uses: actions/github-script@v5
         if: ${{ github.event.workflow_run.conclusion == 'success' }}

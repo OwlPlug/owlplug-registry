@@ -45,8 +45,8 @@ jobs:
             const fs = require('fs')
 
             const validateUrl = function (str) {
-              let urlRegex = '^(https?)://[^\s/$.?#].[^\s]*$';
-              let url = new RegExp(urlRegex, 'i');
+              let urlRegex = /^(https):\/\/[^\s/$.?#].[^\s]*$/i;
+              let url = new RegExp(urlRegex);
               if (!url.test(str)) {
                 throw new Error(`Invalid url : ${str}`)
               }
