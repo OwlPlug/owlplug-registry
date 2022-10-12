@@ -58,8 +58,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER, VALIDATE_LOG } = process.env
-            console.log(VALIDATE_LOG)
-            const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replace("\\n", "\n")
+            const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replaceAll("\\n", "\n")
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
               owner: context.repo.owner,
@@ -85,8 +84,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER, VALIDATE_LOG } = process.env
-            console.log(VALIDATE_LOG)
-            const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replace("\\n", "\n")
+            const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replaceAll("\\n", "\n")
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
               owner: context.repo.owner,
