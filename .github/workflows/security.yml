@@ -96,7 +96,7 @@ jobs:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: "${{join(fromJSON(steps.bundles-download.outputs.paths),'\n')}}"
 
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}

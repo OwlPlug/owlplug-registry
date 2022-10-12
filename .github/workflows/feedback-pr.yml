@@ -40,7 +40,7 @@ jobs:
           echo "$PR_NUMBER"
           echo "::set-output name=pr-number::$PR_NUMBER"
 
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         name: Sanitize validation logs
         id: sanitize-validate-log
         with:
@@ -49,7 +49,7 @@ jobs:
             let validateLog = fs.readFileSync('validate.log')
             return validateLog.toString().replace("`", "").replace("~", "")
 
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         env:
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
@@ -75,7 +75,7 @@ jobs:
               `
             })
   
-      - uses: actions/github-script@v5
+      - uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         env:
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
