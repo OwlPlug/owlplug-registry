@@ -58,6 +58,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER, VALIDATE_LOG } = process.env
+            console.log(VALIDATE_LOG)
             const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replace("\\n", "\n")
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
@@ -67,6 +68,7 @@ jobs:
               
               <details>
                 <summary>View validation details</summary>
+            
             ~~~
             ${VALIDATE_LOG_DISPLAY}
             ~~~
@@ -83,6 +85,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER, VALIDATE_LOG } = process.env
+            console.log(VALIDATE_LOG)
             const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replace("\\n", "\n")
             github.rest.issues.createComment({
               issue_number: PR_NUMBER,
@@ -92,6 +95,7 @@ jobs:
 
               <details>
                 <summary>View validation details</summary>
+            
             ~~~
             ${VALIDATE_LOG_DISPLAY}
             ~~~
