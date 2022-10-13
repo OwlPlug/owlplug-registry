@@ -20,8 +20,8 @@ jobs:
         with:
           format: 'json' 
 
-      - id: pr-updated-packages
-        name: "Retrieve updated packages"
+      - name: "Retrieve updated packages"
+        id: pr-updated-packages
         run: |
           readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
           packages=()
@@ -34,8 +34,8 @@ jobs:
           PACKAGES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${packages[@]}")
           echo "::set-output name=packages::$PACKAGES_JSON"
 
-      - id: pr-bundles
-        name: "Retrieve bundles files"
+      - name: "Retrieve bundles files"
+        id: pr-bundles
         run: |
           readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
           bundles=()

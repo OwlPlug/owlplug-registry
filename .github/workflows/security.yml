@@ -59,14 +59,14 @@ jobs:
               validateUrl(bundle)
             }
 
-      - name: Retrieve bundles url'
+      - name: Retrieve bundles url
         id: bundles-url
         run: |
           BUNDLES_JSON=$(cat bundles.json)
           echo "$BUNDLES"
           echo "::set-output name=bundles::$BUNDLES_JSON"
 
-      - name: Retrieve PR number'
+      - name: Retrieve PR number
         id: pr-number
         run: |
           PR_NUMBER=$(cat pr-number)
@@ -96,7 +96,8 @@ jobs:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: "${{join(fromJSON(steps.bundles-download.outputs.paths),'\n')}}"
 
-      - uses: actions/github-script@v6
+      - name: Publish AV report
+        uses: actions/github-script@v6
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}

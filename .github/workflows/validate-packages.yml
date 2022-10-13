@@ -23,8 +23,8 @@ jobs:
         with:
           format: 'json' 
 
-      - id: pr-updated-packages
-        name: "Retrieve updated packages"
+      - name: "Retrieve updated packages"
+        id: pr-updated-packages
         run: |
           readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
           packages=()
