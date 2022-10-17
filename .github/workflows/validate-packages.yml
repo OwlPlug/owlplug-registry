@@ -8,6 +8,7 @@ jobs:
   validate:
     if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:        
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -48,6 +49,8 @@ jobs:
             echo "Validating package ${package}."
             node index.js validate package ${package} >> ./pr-artifacts/validate.log
           done
+
+          echo ./pr-artifacts/validate.log
 
       - name: Registry validation
         run: node index.js validate registry >> ./pr-artifacts/validate.log

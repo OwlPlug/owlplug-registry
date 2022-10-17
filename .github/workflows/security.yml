@@ -9,6 +9,7 @@ on:
 jobs:
   antivirus:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: >
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
