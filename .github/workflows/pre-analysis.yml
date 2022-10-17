@@ -32,12 +32,12 @@ jobs:
             fi
           done
           PACKAGES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${packages[@]}")
-          echo "::set-output name=packages::$PACKAGES_JSON"
+          echo "packages_json=$PACKAGES_JSON" >> $GITHUB_ENV
 
       - name: "Retrieve bundles files"
         id: pr-bundles
         run: |
-          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
+          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ env.packages_json }}')"
           bundles=()
           for package in ${packages[@]}; do
             echo "Retrieving bundles for package ${package}."
@@ -51,7 +51,6 @@ jobs:
           done
 
           BUNDLES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${bundles[@]}")
-          echo "::set-output name=bundles::$BUNDLES_JSON"
 
           mkdir -p ./pr-artifacts
           echo $BUNDLES_JSON > ./pr-artifacts/bundles.json
