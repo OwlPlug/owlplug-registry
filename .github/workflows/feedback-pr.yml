@@ -48,7 +48,11 @@ jobs:
           script: |
             const fs = require('fs')
             let validateLog = fs.readFileSync('validate.log')
-            return validateLog.toString().replace("`", "").replace("~", "")
+            return validateLog.toString()
+              .replaceAll("`", "")
+              .replaceAll("~", "")
+              .replaceAll("<", "")
+              .replaceAll(">", "")
 
       - name: Publish validation success report
         uses: actions/github-script@v6
