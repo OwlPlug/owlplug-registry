@@ -9,6 +9,7 @@ on:
 jobs:
   antivirus:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     if: >
       github.event.workflow_run.event == 'pull_request' &&
       github.event.workflow_run.conclusion == 'success'
@@ -59,24 +60,24 @@ jobs:
               validateUrl(bundle)
             }
 
-      - name: Retrieve bundles url'
+      - name: Retrieve bundles url
         id: bundles-url
         run: |
           BUNDLES_JSON=$(cat bundles.json)
           echo "$BUNDLES"
-          echo "::set-output name=bundles::$BUNDLES_JSON"
+          echo "bundles_json=$BUNDLES_JSON" >> $GITHUB_ENV
 
-      - name: Retrieve PR number'
+      - name: Retrieve PR number
         id: pr-number
         run: |
           PR_NUMBER=$(cat pr-number)
           echo "$PR_NUMBER"
-          echo "::set-output name=pr-number::$PR_NUMBER"
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_ENV
 
       - name: "Download bundles files"
         id: bundles-download
         run: |
-          readarray -t bundles <<<"$(jq -r '.[]' <<<'${{ steps.bundles-url.outputs.bundles }}')"
+          readarray -t bundles <<<"$(jq -r '.[]' <<<'${{ env.bundles_json }}')"
           path=()
           mkdir /tmp/bundles
           for bundle in ${bundles[@]}; do
@@ -87,19 +88,21 @@ jobs:
           files=(/tmp/bundles/*) 
 
           FILES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${files[@]}")
-          echo "::set-output name=paths::$FILES_JSON"
+          echo "files_json=$FILES_JSON" >> $GITHUB_ENV
 
       - name: VirusTotal Scan
         id: vt-scan
         uses: crazy-max/ghaction-virustotal@v3
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
-          files: "${{join(fromJSON(steps.bundles-download.outputs.paths),'\n')}}"
+          request_rate: 4
+          files: "${{join(fromJSON(env.files_json),'\n')}}"
 
-      - uses: actions/github-script@v6
+      - name: Publish AV report
+        uses: actions/github-script@v6
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
-          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+          PR_NUMBER: ${{ env.pr_number }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |

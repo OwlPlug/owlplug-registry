@@ -7,6 +7,7 @@ on:
 jobs:
   feedback:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - run: echo 'The triggering workflow passed'
       - name: 'Download pre analysis artifacts'
@@ -38,24 +39,29 @@ jobs:
         run: |
           PR_NUMBER=$(cat pr-number)
           echo "$PR_NUMBER"
-          echo "::set-output name=pr-number::$PR_NUMBER"
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_ENV
 
-      - uses: actions/github-script@v6
-        name: Sanitize validation logs
+      - name: Sanitize validation logs
         id: sanitize-validate-log
+        uses: actions/github-script@v6
         with:
           script: |
             const fs = require('fs')
             let validateLog = fs.readFileSync('validate.log')
-            return validateLog.toString().replace("`", "").replace("~", "")
+            return validateLog.toString()
+              .replaceAll("`", "")
+              .replaceAll("~", "")
+              .replaceAll("<", "")
+              .replaceAll(">", "")
 
-      - uses: actions/github-script@v6
+      - name: Publish validation success report
+        uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         env:
-          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+          PR_NUMBER: ${{ env.pr_number }}
           VALIDATE_LOG : ${{ steps.sanitize-validate-log.outputs.result }}
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { PR_NUMBER, VALIDATE_LOG } = process.env
             const VALIDATE_LOG_DISPLAY = VALIDATE_LOG.replaceAll("\\n", "\n")
@@ -75,7 +81,8 @@ jobs:
               `
             })
   
-      - uses: actions/github-script@v6
+      - name: Publish validation error report
+        uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         env:
           PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}

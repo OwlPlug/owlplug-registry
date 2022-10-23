@@ -8,8 +8,9 @@ jobs:
   packages:
     if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:        
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
@@ -20,8 +21,8 @@ jobs:
         with:
           format: 'json' 
 
-      - id: pr-updated-packages
-        name: "Retrieve updated packages"
+      - name: "Retrieve updated packages"
+        id: pr-updated-packages
         run: |
           readarray -t updated_files <<<"$(jq -r '.[]' <<<'${{ steps.pr-changed-files.outputs.added_modified }}')"
           packages=()
@@ -32,12 +33,12 @@ jobs:
             fi
           done
           PACKAGES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${packages[@]}")
-          echo "::set-output name=packages::$PACKAGES_JSON"
+          echo "packages_json=$PACKAGES_JSON" >> $GITHUB_ENV
 
-      - id: pr-bundles
-        name: "Retrieve bundles files"
+      - name: "Retrieve bundles files"
+        id: pr-bundles
         run: |
-          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ steps.pr-updated-packages.outputs.packages }}')"
+          readarray -t packages <<<"$(jq -r '.[]' <<<'${{ env.packages_json }}')"
           bundles=()
           for package in ${packages[@]}; do
             echo "Retrieving bundles for package ${package}."
@@ -51,16 +52,17 @@ jobs:
           done
 
           BUNDLES_JSON=$(jq --compact-output --null-input '$ARGS.positional' --args -- "${bundles[@]}")
-          echo "::set-output name=bundles::$BUNDLES_JSON"
 
           mkdir -p ./pr-artifacts
           echo $BUNDLES_JSON > ./pr-artifacts/bundles.json
 
       - name: Save PR number
+        if: ${{ always() }}
         run: |
           echo ${{ github.event.number }} > ./pr-artifacts/pr-number
 
       - uses: actions/upload-artifact@v3
+        if: ${{ always() }}
         with:
           name: pr-artifacts
           path: pr-artifacts/
