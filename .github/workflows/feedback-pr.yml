@@ -85,7 +85,7 @@ jobs:
         uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
         env:
-          PR_NUMBER: ${{ steps.pr-number.outputs.pr-number }}
+          PR_NUMBER: ${{ env.pr_number }}
           VALIDATE_LOG : ${{ steps.sanitize-validate-log.outputs.result }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
@@ -109,15 +109,51 @@ jobs:
             })
 
       - name: Label success job
-        uses: andymckay/labeler@master
+        uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        env:
+          PR_NUMBER: ${{ env.pr_number }}
         with:
-          add-labels: "Valid, Wait-Approval"
-          remove-labels: "Invalid"
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { PR_NUMBER } = process.env
+            github.rest.issues.addLabels({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['Valid', 'Wait-Approval']
+            })
+            github.rest.issues.removeLabel({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'Invalid'
+            })
 
       - name: Label failure job
-        uses: andymckay/labeler@master
+        uses: actions/github-script@v6
         if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+        env:
+          PR_NUMBER: ${{ env.pr_number }}
         with:
-          add-labels: "Invalid"
-          remove-labels: "Valid, Wait-Approval"
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { PR_NUMBER } = process.env
+            github.rest.issues.addLabels({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['Invalid']
+            })
+            github.rest.issues.removeLabel({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'Valid'
+            })
+            github.rest.issues.removeLabel({
+              issue_number: PR_NUMBER,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: 'Wait-Approval'
+            })
