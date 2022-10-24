@@ -117,18 +117,22 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER } = process.env
-            github.rest.issues.addLabels({
-              issue_number: PR_NUMBER,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['Valid', 'Wait-Approval']
-            })
-            github.rest.issues.removeLabel({
-              issue_number: PR_NUMBER,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: 'Invalid'
-            })
+            try {
+              github.rest.issues.addLabels({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['Valid', 'Wait-Approval']
+              })
+            } finally {}
+            try {
+              github.rest.issues.removeLabel({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'Invalid'
+              })
+            } finally {}
 
       - name: Label failure job
         uses: actions/github-script@v6
@@ -139,21 +143,27 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { PR_NUMBER } = process.env
-            github.rest.issues.addLabels({
-              issue_number: PR_NUMBER,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['Invalid']
-            })
-            github.rest.issues.removeLabel({
-              issue_number: PR_NUMBER,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: 'Valid'
-            })
-            github.rest.issues.removeLabel({
-              issue_number: PR_NUMBER,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: 'Wait-Approval'
-            })
+            try {
+              github.rest.issues.addLabels({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['Invalid']
+              })
+            } finally {}
+            try {
+              github.rest.issues.removeLabel({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'Valid'
+              })
+            } finally {}
+            try {
+              github.rest.issues.removeLabel({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'Wait-Approval'
+              })
+            } finally {}
