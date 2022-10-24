@@ -1,0 +1,12 @@
+# Add 'Registry' to any changes within 'registry' folder or any subfolders
+Registry:
+- registry/**/*
+
+Maintenance: 
+- index.js
+- package.json
+- .gitignore
+- .github/**/*
+
+Workflow:
+- .github/**/*
