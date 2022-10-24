@@ -124,7 +124,7 @@ jobs:
                 repo: context.repo.repo,
                 labels: ['Valid', 'Wait-Approval']
               })
-            } finally {}
+            } catch(e) {}
             try {
               github.rest.issues.removeLabel({
                 issue_number: PR_NUMBER,
@@ -132,7 +132,7 @@ jobs:
                 repo: context.repo.repo,
                 name: 'Invalid'
               })
-            } finally {}
+            } catch(e) {}
 
       - name: Label failure job
         uses: actions/github-script@v6
@@ -150,7 +150,7 @@ jobs:
                 repo: context.repo.repo,
                 labels: ['Invalid']
               })
-            } finally {}
+            } catch(e) {}
             try {
               github.rest.issues.removeLabel({
                 issue_number: PR_NUMBER,
@@ -158,7 +158,7 @@ jobs:
                 repo: context.repo.repo,
                 name: 'Valid'
               })
-            } finally {}
+            } catch(e) {}
             try {
               github.rest.issues.removeLabel({
                 issue_number: PR_NUMBER,
@@ -166,4 +166,4 @@ jobs:
                 repo: context.repo.repo,
                 name: 'Wait-Approval'
               })
-            } finally {}
+            } catch(e) {}
