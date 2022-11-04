@@ -8,6 +8,7 @@ on:
 
 permissions:
   actions: read
+  pull-requests: write
 
 jobs:
   antivirus:
@@ -103,8 +104,6 @@ jobs:
 
       - name: Publish AV report
         uses: actions/github-script@v6
-        permissions:
-          pull-requests: write
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
           PR_NUMBER: ${{ env.pr_number }}
