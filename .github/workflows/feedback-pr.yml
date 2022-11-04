@@ -1,8 +1,13 @@
 name: Validation Feedback
+
 on:
   workflow_run:
     workflows: [Validate Packages]
     types: [completed]
+
+permissions:
+  actions: read
+  pull-requests: write
 
 jobs:
   feedback:
