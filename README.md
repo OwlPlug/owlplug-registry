@@ -100,5 +100,5 @@ All pull requests will be reviewed and approved by a maintainer before merge.
 
 ## License
 
-View [LICENSE.md](license.md) file.
+View [LICENSE.md](LICENSE.md) file.
 
