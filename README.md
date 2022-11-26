@@ -1,6 +1,7 @@
 # OwlPlug Registry
 
 [![Build and Deploy](https://github.com/OwlPlug/owlplug-registry/actions/workflows/deploy.yml/badge.svg)](https://github.com/OwlPlug/owlplug-registry/actions/workflows/deploy.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/OwlPlug/owlplug-registry/badge)](https://api.securityscorecards.dev/projects/github.com/OwlPlug/owlplug-registry)
 [![Discord](https://img.shields.io/badge/chat-on%20discord-%237289DA.svg)](https://discord.gg/nEdHAMB)
 
 
