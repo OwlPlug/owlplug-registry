@@ -1,0 +1,22 @@
+---
+name: Helm
+slug: helm
+creator: Matthew Tytel
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/org.tytel.helm/helm.png
+description: A free polyphonic synth with lots of modulation
+pageUrl: https://tytel.org/helm/
+donateUrl: https://tytel.org/helm/
+type: instrument
+stage: release
+tags:
+- Synth
+bundles:
+- name: Windows
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/org.tytel.helm/bundles/helm-vst-win.zip
+  downloadSha256: fd8352fbeff627b1fbd3b9e729c62a02b21fb7cf373158f5442d82e1a78ecea4
+  fileSize: 5700000
