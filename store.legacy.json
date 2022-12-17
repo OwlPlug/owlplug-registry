@@ -44,6 +44,33 @@
       ]
     },
     {
+      "name": "Synister",
+      "slug": "synister/synister",
+      "creator": "QUL of TU-Berlin",
+      "license": "gpl-3.0",
+      "screenshotUrl": "https://central.owlplug.com/products/synister/synister.png",
+      "description": "A substractive software synthesizer",
+      "pageUrl": "https://the-synister.github.io/",
+      "type": "instrument",
+      "stage": "beta",
+      "tags": [
+        "Synth"
+      ],
+      "bundles": [
+        {
+          "name": "Windows",
+          "targets": [
+            "win32",
+            "win64"
+          ],
+          "format": "vst",
+          "downloadUrl": "https://central.owlplug.com/products/synister/bundles/synister-vst-win.zip",
+          "downloadSha256": "3f99b18b72a3ab49c8e1d04ba8bb3229e8ed28bf03dcf31d9b0128f7ed79482f",
+          "fileSize": 3500000
+        }
+      ]
+    },
+    {
       "name": "Helm",
       "slug": "tytel/helm",
       "creator": "Matthew Tytel",
