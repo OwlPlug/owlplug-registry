@@ -1,0 +1,28 @@
+---
+name: Dexed
+slug: dexed
+creator: Pascal Gauthier
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/dexed/dexed.png
+description: Synthesizer closely modeled on the Yamaha DX7
+pageUrl: https://asb2m10.github.io/dexed/
+version: 1.0.0.0
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Dexed Windows
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/dexed/bundles/dexed-vst-win.zip
+  downloadSha256: a5f94527dbbbd46af6d2daed8fc0d76d03d08f2345e428c0dab550bdf2562944
+  fileSize: 3900000
+- name: Dexed Linux 64
+  targets:
+  - linux64
+  format: vst3
+  downloadUrl: https://central.owlplug.com/products/dexed/bundles/dexed-vst3-linux64.zip
+  downloadSha256: 54faa8d58cd1526fd86241246e887b3814b6a4a71bdaf6fb66691bcd0f106481
+  fileSize: 3347000
