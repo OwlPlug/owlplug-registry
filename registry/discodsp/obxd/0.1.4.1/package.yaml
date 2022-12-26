@@ -1,0 +1,33 @@
+---
+name: OB-Xd
+slug: obxd
+creator: discoDSP
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/obxd/obxd.png
+description: |-
+  Emulation of famous OB-X, OB-Xa and OB-8 synths
+
+  OB-Xd is based on the Oberheim OB-X. It attempts to recreate its sound and behavior, but as the original was very limited in some important ways a number of things were added or altered to the original design.
+  The OB-Xd was designed to sound as good and as rich as the original. It implements micro random detuning which is a big part of that sound. However, it was not designed as a self-contained completely independent soft-synth. It needs to be contained within a VST framework where things like transposition, automation, layering, arpeggiation, etc., are available. Also, like many synths of the OB-X's generation, the OB-Xd has no internal effects so its sounds and textures can be greatly enhanced by the use of additional processing like chorus, reverb, delay, etc.
+pageUrl: https://obxd.wordpress.com/
+donateUrl: https://www.discodsp.com/obxd/
+version: 0.1.4.1
+type: instrument
+tags:
+- Synth
+- Analog
+bundles:
+- name: Win32 VST
+  targets:
+  - win32
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win32.zip
+  downloadSha256: 51a161d7996d70ca179f80855d755aad95b3968ab7ee3a9476f605664f46856e
+  fileSize: 1965000
+- name: Win64 VST
+  targets:
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win64.zip
+  downloadSha256: 64d9c4ce2304fc0abf7bc3cce2812718522ef68d664c7c0bb18ad46e434aae6d
+  fileSize: 2229000
