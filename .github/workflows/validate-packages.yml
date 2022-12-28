@@ -50,13 +50,18 @@ jobs:
           readarray -t packages <<<"$(jq -r '.[]' <<<'${{ env.packages_json }}')"
           for package in ${packages[@]}; do
             echo "Validating package ${package}."
+            set -o pipefail
             node index.js validate package ${package} | tee -a ./pr-artifacts/validate.log
+            set +o pipefail
           done
 
           echo ./pr-artifacts/validate.log
 
       - name: Registry validation
-        run: node index.js validate registry | tee -a ./pr-artifacts/validate.log
+        run: |
+          set -o pipefail
+          node index.js validate registry | tee -a ./pr-artifacts/validate.log
+          set +o pipefail
 
       - name: Save PR number
         if: ${{ always() }}
