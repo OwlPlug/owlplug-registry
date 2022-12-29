@@ -136,6 +136,58 @@
         }
       }
     },
+    "roth-air/roth-air": {
+      "slug": "roth-air/roth-air",
+      "latestVersion": "0.1.0.4",
+      "versions": {
+        "0.1.0.4": {
+          "name": "Roth-AIR",
+          "slug": "roth-air/roth-air",
+          "creator": "Daniel Rothmann",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/rothair/rothair.png",
+          "description": "Roth-AIR is a mixing tool for easily adding airy, crispy presence to your audio. \n\nThis is achieved by a combination of multiband compression and gentle\nsaturation of the highs. It enables for a stronger, more consistent presence of\nhigh frequency material and works particularly well with vocals, synths and strings.\n\nThe process is made easy by a simple user interface, automatic makeup gain and a combined\nfunction 'AIR' knob.\n\nRoth-AIR is available for free in 32-bit and 64-bit as\nVST and AU (OS X only) plugins for Windows and Mac.",
+          "pageUrl": "https://www.danielrothmann.com/",
+          "type": "effect",
+          "tags": [
+            "Compressor",
+            "Mastering"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-win32.zip",
+              "downloadSha256": "29dfca9cbdc7a176aa755966a317e17605ef96de28643d0c0927497098d2a718",
+              "fileSize": 2704000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-win64.zip",
+              "downloadSha256": "f16449ef5c869d992500d8e00bb767cbe53ed3f921503a2cd94aea50d4dd4462",
+              "fileSize": 2981000
+            },
+            {
+              "name": "MacOs VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-osx.zip",
+              "downloadSha256": "5b288334cc47297a6fc6ffdd004e2ff91640560773e7166f65ff4f8ff28a3ae7",
+              "fileSize": 2957000
+            }
+          ]
+        }
+      }
+    },
     "synister/synister": {
       "slug": "synister/synister",
       "latestVersion": "0.1.0.2",
