@@ -192,6 +192,43 @@
       ]
     },
     {
+      "name": "KickMaker",
+      "slug": "teragonaudio/kickmaker",
+      "creator": "Teragon Audio",
+      "license": "bsd",
+      "screenshotUrl": "https://central.owlplug.com/products/kickmaker/kickmaker.png",
+      "version": "0.1.0.0",
+      "description": "KickMaker is a synthesizer designed specifically to create good kick drum sounds. It uses four independent oscillators and a wide range of effects, allowing one to create perfectly customized beats.",
+      "pageUrl": "https://teragonaudio.com/KickMaker.html",
+      "type": "instrument",
+      "tags": [
+        "Synth",
+        "Drum"
+      ],
+      "bundles": [
+        {
+          "name": "Win32 VST",
+          "targets": [
+            "win32"
+          ],
+          "format": "vst",
+          "downloadUrl": "https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-win32.zip",
+          "downloadSha256": "1f54d12f11e0dfadef3ae001dab976adcaaa4c7b79d79d4838527bb53f1f00f9",
+          "fileSize": 1724000
+        },
+        {
+          "name": "MacOs VST",
+          "targets": [
+            "osx"
+          ],
+          "format": "vst",
+          "downloadUrl": "https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-osx.zip",
+          "downloadSha256": "6769d514f1b5106435bcaf7b129588af34e47cc27cb75b8e00ad5c76ebc6b5eb",
+          "fileSize": 1568000
+        }
+      ]
+    },
+    {
       "name": "Tunefish4",
       "slug": "tunefish/tunefish4",
       "creator": "Tunefish Synth",
