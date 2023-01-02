@@ -60,8 +60,43 @@ jobs:
             let rawBundles = fs.readFileSync('bundles.json')
             let bundles = JSON.parse(rawBundles)
 
-            for(let bundle of bundles) {
+            for (let bundle of bundles) {
               validateUrl(bundle)
+            }
+
+      - name: 'Verify bundles.json size'
+        uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0 # v6
+        env:
+          PR_NUMBER: ${{ env.pr_number }}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const fs = require('fs')
+            const { PR_NUMBER } = process.env
+            const BUNDLES_MAX_SIZE = 20
+            
+            let rawBundles = fs.readFileSync('bundles.json')
+            let bundles = JSON.parse(rawBundles)
+
+            if (bundles.length > BUNDLES_MAX_SIZE) {
+              let message = `Less than ${BUNDLES_MAX_SIZE} VirusTotal analysis per merge request allowed! ` 
+                + `Please, reduce number of bundles (${bundles.length}/${BUNDLES_MAX_SIZE}) by opening multiple merge requests.`
+                + `If no bundles binaries are added or modified, you can ignore this message.`
+
+              github.rest.issues.createComment({
+                issue_number: PR_NUMBER,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `:shield: **Virus Total Analysis Report**
+
+              ${message}`
+              })
+
+              console.log(message)
+              throw new Error(message)
+
+            } else {
+              console.log(`Allowed bundles : ${bundles.length} / ${BUNDLES_MAX_SIZE}`)
             }
 
       - name: Retrieve bundles url
