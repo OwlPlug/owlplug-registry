@@ -1,0 +1,32 @@
+---
+name: Cocoa Delay
+creator: tesselode
+license: mit
+screenshotUrl: https://central.owlplug.com/products/cocoadelay/cocoadelay.png
+description: |- 
+  Cocoa Delay is a free, open-source delay plugin in VST format. It focuses on clean design, easy operation, and a warm, lively sound.
+
+  - Delay time drift, for giving the wet signal a slight wow/flutter effect
+  - Adjustable wet level ducking based on the input signal
+  - Static, ping-pong, and circular pan modes
+  - Drive section based on open-source Airwindows saturation code
+pageUrl: https://tesselode.itch.io/cocoa-delay
+donateUrl: https://tesselode.itch.io/cocoa-delay
+type: effect
+tags:
+- Delay
+bundles:
+- name: Win32 VST
+  targets:
+  - win32
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win32.zip
+  downloadSha256: 3de4b52b8d23ddac41d9e66086cf4289c2e44fdef9bea8d54267dfb9a140d8e0
+  fileSize: 278000
+- name: Win64 VST
+  targets:
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win64.zip
+  downloadSha256: 467e5c4d5cdf816601739babd0c31f6e31cbb9c9b31f0fb68aaaeb1cde690826
+  fileSize: 295000
