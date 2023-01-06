@@ -264,6 +264,129 @@
         }
       }
     },
+    "tesselode/cocoa-delay": {
+      "slug": "tesselode/cocoa-delay",
+      "latestVersion": "1.0.0.0",
+      "versions": {
+        "1.0.0.0": {
+          "name": "Cocoa Delay",
+          "creator": "tesselode",
+          "license": "mit",
+          "screenshotUrl": "https://central.owlplug.com/products/cocoadelay/cocoadelay.png",
+          "description": "Cocoa Delay is a free, open-source delay plugin in VST format. It focuses on clean design, easy operation, and a warm, lively sound.\n\n- Delay time drift, for giving the wet signal a slight wow/flutter effect\n- Adjustable wet level ducking based on the input signal\n- Static, ping-pong, and circular pan modes\n- Drive section based on open-source Airwindows saturation code",
+          "pageUrl": "https://tesselode.itch.io/cocoa-delay",
+          "donateUrl": "https://tesselode.itch.io/cocoa-delay",
+          "type": "effect",
+          "tags": [
+            "Delay"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win32.zip",
+              "downloadSha256": "3de4b52b8d23ddac41d9e66086cf4289c2e44fdef9bea8d54267dfb9a140d8e0",
+              "fileSize": 278000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win64.zip",
+              "downloadSha256": "467e5c4d5cdf816601739babd0c31f6e31cbb9c9b31f0fb68aaaeb1cde690826",
+              "fileSize": 295000
+            }
+          ]
+        }
+      }
+    },
+    "tesselode/flutterbird": {
+      "slug": "tesselode/flutterbird",
+      "latestVersion": "1.0.0.0",
+      "versions": {
+        "1.0.0.0": {
+          "name": "Flutterbird",
+          "creator": "tesselode",
+          "license": "mit",
+          "screenshotUrl": "https://central.owlplug.com/products/flutterbird/flutterbird.png",
+          "description": "Flutterbird is a free, open-source effect plugin for adding pitch and volume fluctuation to incoming audio. It can be used for traditional wow/flutter effects as well as more chaotic, extreme modulation. Flutterbird has four separate oscillators with adjustable speeds that can be mapped to either pitch or volume.",
+          "pageUrl": "https://tesselode.itch.io/flutterbird",
+          "donateUrl": "https://tesselode.itch.io/flutterbird",
+          "type": "effect",
+          "tags": [
+            "Pitch"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win32.zip",
+              "downloadSha256": "8b2f4bcea6bfef33a5ea5d3acab1c175be7fa764d3f651bb71c5d07a75a9452d",
+              "fileSize": 494000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win64.zip",
+              "downloadSha256": "a1e9fe799c4c71e59f2902fc35c8177dd497dde7aa67b18e0a11b85354214b5a",
+              "fileSize": 511000
+            }
+          ]
+        }
+      }
+    },
+    "tesselode/mika-micro": {
+      "slug": "tesselode/mika-micro",
+      "latestVersion": "1.0.0.0",
+      "versions": {
+        "1.0.0.0": {
+          "name": "Mika Micro",
+          "creator": "tesselode",
+          "license": "mit",
+          "screenshotUrl": "https://central.owlplug.com/products/mikamicro/mikamicro.png",
+          "description": "Mika Micro is a subtractive synthesizer plugin that aims to be fun and expressive with a minimal set of controls.\n\n - 2 oscillators with 6 waveforms and split knobs\n - Simple FM functionality \n - 12dB resonant low pass filter \n - 8 voice polyphony and mono/legato modes",
+          "pageUrl": "https://tesselode.itch.io/mika-micro",
+          "donateUrl": "https://tesselode.itch.io/mika-micro",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win32.zip",
+              "downloadSha256": "f945804921b34de9b6668106153adce38a70b6ce0799876169f8cb4da88b0dba",
+              "fileSize": 449000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win64.zip",
+              "downloadSha256": "00edda4d5e02563acfcb1ee063aefdf57ef6d96b7dc7b945c9be50649541855c",
+              "fileSize": 467000
+            }
+          ]
+        }
+      }
+    },
     "tunefish/tunefish4": {
       "slug": "tunefish/tunefish4",
       "latestVersion": "4.2.0.0",
