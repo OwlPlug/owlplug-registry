@@ -1,0 +1,29 @@
+---
+name: Mika Micro
+creator: tesselode
+license: mit
+screenshotUrl: https://central.owlplug.com/products/mikamicro/mikamicro.png
+description: "Mika Micro is a subtractive synthesizer plugin that aims to be fun and
+  expressive with a minimal set of controls.\n\n - 2 oscillators with 6 waveforms
+  and split knobs\n - Simple FM functionality \n - 12dB resonant low pass filter \n
+  - 8 voice polyphony and mono/legato modes"
+pageUrl: https://tesselode.itch.io/mika-micro
+donateUrl: https://tesselode.itch.io/mika-micro
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Win32 VST
+  targets:
+  - win32
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win32.zip
+  downloadSha256: f945804921b34de9b6668106153adce38a70b6ce0799876169f8cb4da88b0dba
+  fileSize: 449000
+- name: Win64 VST
+  targets:
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win64.zip
+  downloadSha256: 00edda4d5e02563acfcb1ee063aefdf57ef6d96b7dc7b945c9be50649541855c
+  fileSize: 467000

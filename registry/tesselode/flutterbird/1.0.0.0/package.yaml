@@ -1,0 +1,29 @@
+---
+name: Flutterbird
+creator: tesselode
+license: mit
+screenshotUrl: https://central.owlplug.com/products/flutterbird/flutterbird.png
+description: Flutterbird is a free, open-source effect plugin for adding pitch and
+  volume fluctuation to incoming audio. It can be used for traditional wow/flutter
+  effects as well as more chaotic, extreme modulation. Flutterbird has four separate
+  oscillators with adjustable speeds that can be mapped to either pitch or volume.
+pageUrl: https://tesselode.itch.io/flutterbird
+donateUrl: https://tesselode.itch.io/flutterbird
+type: effect
+tags:
+- Pitch
+bundles:
+- name: Win32 VST
+  targets:
+  - win32
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win32.zip
+  downloadSha256: 8b2f4bcea6bfef33a5ea5d3acab1c175be7fa764d3f651bb71c5d07a75a9452d
+  fileSize: 494000
+- name: Win64 VST
+  targets:
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win64.zip
+  downloadSha256: a1e9fe799c4c71e59f2902fc35c8177dd497dde7aa67b18e0a11b85354214b5a
+  fileSize: 511000
