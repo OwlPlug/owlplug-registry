@@ -3,6 +3,77 @@
   "url": "https://registry.owlplug.com",
   "schemaVersion": "1.2.0",
   "packages": {
+    "artfwo/andes": {
+      "slug": "artfwo/andes",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "Andes",
+          "creator": "Artem Popov",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/andes/andes.png",
+          "description": "Andes is a software synthesiser plugin in early stages of development. The core of Andes is an original oscillator which uses a pseudo-3D version of Perlin noise to produce distinctively digital sound.",
+          "pageUrl": "https://artfwo.github.io/andes/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-win32.zip",
+              "downloadSha256": "e891942d0518020a603732fce25706ccc8272f549939bea990f929bb90ab1928",
+              "fileSize": 1410000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "technicalUid": "1097753715",
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-win64.zip",
+              "downloadSha256": "3af35f02121a3c7ad6375bfe9c29a382f5882fa443bbf4c2df347a255c0edf2a",
+              "fileSize": 1724000
+            },
+            {
+              "name": "MacOs VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-osx.zip",
+              "downloadSha256": "f83196ca17aa2ef91c739c17ef0af3db9b7520d2b5e534b295d8af121bc95df9",
+              "fileSize": 1568000
+            },
+            {
+              "name": "Linux64 VST",
+              "targets": [
+                "linux64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-linux64.zip",
+              "downloadSha256": "bc91ea7055fa13df3065aeff89faf5d2ca0201f322a8f5fc3dd030ba1f6b65c6",
+              "fileSize": 3185000
+            },
+            {
+              "name": "Linux32 VST",
+              "targets": [
+                "linux32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-linux32.zip",
+              "downloadSha256": "66d52c05e72531a9b2cdca9b06c5f8a26eb0562dd1fc842cbb9dbbaf2e56385a",
+              "fileSize": 3185000
+            }
+          ]
+        }
+      }
+    },
     "dexed/dexed": {
       "slug": "dexed/dexed",
       "latestVersion": "1.0.0.0",
