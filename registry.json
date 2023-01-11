@@ -207,6 +207,39 @@
         }
       }
     },
+    "pentagrampro/owlbass": {
+      "slug": "pentagrampro/owlbass",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "OwlBass",
+          "creator": "PentagramPro",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/owlbass/owlbass.png",
+          "description": "OwlBass is an additive single voice bass synthesizer",
+          "pageUrl": "https://github.com/PentagramPro/OwlBass",
+          "type": "instrument",
+          "stage": "beta",
+          "tags": [
+            "Synth",
+            "Bass"
+          ],
+          "bundles": [
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "technicalUid": "1148746297",
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/owlbass/bundles/owlbass-vst-win64.zip",
+              "downloadSha256": "f12222b8a486de34bbd505162fce98eefc9860c3785e97d26ffd1f362624411f",
+              "fileSize": 1708000
+            }
+          ]
+        }
+      }
+    },
     "roth-air/roth-air": {
       "slug": "roth-air/roth-air",
       "latestVersion": "0.1.0.4",
