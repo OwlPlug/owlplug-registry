@@ -207,6 +207,86 @@
         }
       }
     },
+    "mzuther/squeezer": {
+      "slug": "mzuther/squeezer",
+      "latestVersion": "2.5.4",
+      "versions": {
+        "2.5.4": {
+          "name": "Squeezer",
+          "creator": "Martin Zuther",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/squeezer/squeezer.png",
+          "description": "Flexible general-purpose audio compressor with a touch of citrus.\n\nSqueezer is different from all the compressors I know: its knobs are stepped to fine-tuned preset values, but can be changed to continuous values by clicking a small orange light located next to them. This allows you to find nice settings fast while not preventing optimisation of settings.",
+          "pageUrl": "https://github.com/mzuther/Squeezer",
+          "type": "effect",
+          "tags": [
+            "Compressor"
+          ],
+          "bundles": [
+            {
+              "name": "Win32 VST",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst2_2.5.4.zip",
+              "downloadSha256": "4b8f845210589a1ec2876836c2c540201b66f92388b8f9f685f779ad177eca56",
+              "fileSize": 4000000
+            },
+            {
+              "name": "Win64 VST",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst2_2.5.4.zip",
+              "downloadSha256": "c45a2aa751eef75acaef52ad3ceafcf2cdaabe07f6b9329cc0dcdcacae0160dc",
+              "fileSize": 4500000
+            },
+            {
+              "name": "Win32 VST3",
+              "targets": [
+                "win32"
+              ],
+              "format": "vst3",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst3_2.5.4.zip",
+              "downloadSha256": "8281532250ef1296f4f6f6e4ad1b4cedbb8df64c7e15184640c56a6fe5ea9b55",
+              "fileSize": 2300000
+            },
+            {
+              "name": "Win64 VST3",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst3",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst3_2.5.4.zip",
+              "downloadSha256": "d98a867a862078e32f7f10d6574de525cbb67fd6b629de1e1ecef2f571d47d39",
+              "fileSize": 2600000
+            },
+            {
+              "name": "Linux64 VST",
+              "targets": [
+                "linux64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux64.zip",
+              "downloadSha256": "3ab8c76e42cdfbc9301f4ab7f2b44ea69eaf81118c08127ff9048ba707df66ff",
+              "fileSize": 11666000
+            },
+            {
+              "name": "Linux32 VST",
+              "targets": [
+                "linux32"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux32.zip",
+              "downloadSha256": "f4adb9f16c7983ac8f89c913226b1c8a650948e38219b31d35c7110e74f32045",
+              "fileSize": 11787000
+            }
+          ]
+        }
+      }
+    },
     "pentagrampro/owlbass": {
       "slug": "pentagrampro/owlbass",
       "latestVersion": "1.0.0",
