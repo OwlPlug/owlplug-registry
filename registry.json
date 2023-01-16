@@ -372,6 +372,416 @@
         }
       }
     },
+    "socalabs/mverb2020": {
+      "slug": "socalabs/mverb2020",
+      "latestVersion": "1.0.1",
+      "versions": {
+        "1.0.1": {
+          "name": "Mverb2020",
+          "creator": "Socalabs",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/Mverb2020/mverb2020.png",
+          "description": "Based on Mverb by Martin Eastwood Audio\nStudio quality, open-source reverb. Its release is intended to provide a practical demonstration of Dattorro’s figure-of-eight reverb structure and provide the open source community with a high quality reverb.\nMartin Eastwood’s version of this plugin is no longer updated, this is simply a 64 bit update of his plugin with the standard SocaLabs UI.\nFree\nWindows VST 32/64\nMac VST/AU 64\nLinux VST 64\n",
+          "pageUrl": "https://socalabs.com/effects/mverb2020/",
+          "type": "effect",
+          "tags": [
+            "Reverb"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-win.zip",
+              "downloadSha256": "09007f8b2e677f504686cdaeae37db18b9efdc3c015b484471aa8bc32ce62463",
+              "fileSize": 4085000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-osx.zip",
+              "downloadSha256": "82b7b750e9c3d7c1ac5dc2dc737d0e2fdc9c78e1a134c1a52d7b3a23b82dd25b",
+              "fileSize": 2027000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/papu": {
+      "slug": "socalabs/papu",
+      "latestVersion": "1.0.4",
+      "versions": {
+        "1.0.4": {
+          "name": "PAPU",
+          "creator": "Socalabs",
+          "license": "gpl-2.0",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/PAPU/papu.png",
+          "description": "Emulates hardware of Nintendo Gameboy\n2 Square wave channels\nSweeps on first square wave channel\n1 Noise channel\nWaveform display\nStereo output\nFree / Open Source\nWindows VST 32/64\nMac VST/AU 32/64\n",
+          "pageUrl": "https://socalabs.com/synths/papu/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-win.zip",
+              "downloadSha256": "bb1869a56bff272fa90c4d3d673db11ce520d05b85660f3951e0eb5fb931b883",
+              "fileSize": 7511000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-osx.zip",
+              "downloadSha256": "1999cbb572e133ae99eb103d1c7ba69a98ccb6c6a087e1f7fd6a37200ffc747d",
+              "fileSize": 2101000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/rp2a03": {
+      "slug": "socalabs/rp2a03",
+      "latestVersion": "1.0.9",
+      "versions": {
+        "1.0.9": {
+          "name": "RP2A03",
+          "creator": "Socalabs",
+          "license": "lgpl-2.1",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/RP2A03/rp2a03.png",
+          "description": "Emulates Ricoh 2A03 of the NTSC Nintendo Entertainment System\n2 Square wave channels\n1 Triangle wave channel\n1 Noise channel\nWaveform displayFree / Open Source\nWindows VST 32/64\nMac VST/AU 64\n",
+          "pageUrl": "https://socalabs.com/synths/rp2a03/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-win.zip",
+              "downloadSha256": "d442c23daa2f9aa7412327d4992609b9561ff22796bd498f82b4b7e638e0978b",
+              "fileSize": 7513000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-osx.zip",
+              "downloadSha256": "32d04a74732a2738618a4789e7381fbb0365a52b2daa202dd8db68ea101f47a0",
+              "fileSize": 2098000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/sampledelay": {
+      "slug": "socalabs/sampledelay",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "Socalabs SampleDelay",
+          "creator": "Socalabs",
+          "license": "bsd-3-clause",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/SampleDelay/sampledelay.png",
+          "description": "Mono or Stereo delay\nDelay in samples or ms\nFree\nWindows VST 32/64\nMac VST/AU 64\n",
+          "pageUrl": "https://socalabs.com/effects/sampledelay/",
+          "type": "effect",
+          "tags": [
+            "Delay"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-win.zip",
+              "downloadSha256": "88f845ad4a632bdea55a59de9181a4b4cee8dd315b093828a6ef3821f637f481",
+              "fileSize": 7490000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-osx.zip",
+              "downloadSha256": "ab0d490314c760623cfbece2794770dd78ebceb98f1bf862969fe6fec743c5ba",
+              "fileSize": 2064000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/sfx8": {
+      "slug": "socalabs/sfx8",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "SFX8",
+          "creator": "Socalabs",
+          "license": "bsd-3-clause",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/SFX8/sfx8.png",
+          "description": "Retro style sound effects – coin, laser, explosion, power up, jump & more\nInspired by the sounds of the sounds of NES\n32 parameters per sounds effect\n9 waves: square, saw, sine, noise, triangle, pink, tan, whistle, breaker\n16 pads\nMutate existing sounds\nBased on SFXR & BFXR. Audio engine is open source.\nWindows VST 32/64\nMac VST/AU 32/64\n",
+          "pageUrl": "https://socalabs.com/synths/sfx8/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-win.zip",
+              "downloadSha256": "06f8045f3bf05ce4402fa3d3b46f6c34e317cc70e8f96cab90c7736957b8775e",
+              "fileSize": 7590000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-osx.zip",
+              "downloadSha256": "f6faa4fe8ffc348209d542263fa69ab2912b51160a8eeff375c6d7a11fd8d657",
+              "fileSize": 5805000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/sid": {
+      "slug": "socalabs/sid",
+      "latestVersion": "1.0.5",
+      "versions": {
+        "1.0.5": {
+          "name": "SID",
+          "creator": "Socalabs",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/SID/sid.png",
+          "description": "Emulates MOS Technology SID of the Commodore 64\n3 Oscillators\n4 wave shapes: Square, Triangle, Saw, Noise\nADSR per oscillator\nRing modulation (replaces triangle output) and hard sync between oscillators\nHP, BP, LP filters\nFree / Open Source\nWindows VST 32/64\nMac VST/AU 32/64\n",
+          "pageUrl": "https://socalabs.com/synths/sid/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-win.zip",
+              "downloadSha256": "72ebf04e33137e39edaa19cccafba24f73050cf5950fd05a99962ccc919f6bc1",
+              "fileSize": 7527000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-osx.zip",
+              "downloadSha256": "1e8c32c358140e9aefd385c522313a882218ccd35d79424a747a2e56c888b23a",
+              "fileSize": 2128000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/sn76489": {
+      "slug": "socalabs/sn76489",
+      "latestVersion": "1.0.4",
+      "versions": {
+        "1.0.4": {
+          "name": "SN76489",
+          "creator": "Socalabs",
+          "license": "lgpl-2.1",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/SN76489/sn76489.png",
+          "description": "Emulates Texas Instruments SN76489 of the Sega Master System and other consoles\n3 Square wave channels\n3 Note polyphony\n1 Noise channel with 2 types\nWaveform display\nFree / Open Source\nWindows VST 32/64\nMac VST/AU 32/64\n",
+          "pageUrl": "https://socalabs.com/synths/sn76489/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-win.zip",
+              "downloadSha256": "9c4ac6cf9aa768944fdcc7dc2899bf6fe4638e01cd8a3d16fbcc4a1c7e9f5076",
+              "fileSize": 7509000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-osx.zip",
+              "downloadSha256": "647808ceb98029badd8b6ed87df098b064d4d1a0754970f7fa7a23a4ea8bf04d",
+              "fileSize": 2085000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/socalabs-compressor": {
+      "slug": "socalabs/socalabs-compressor",
+      "latestVersion": "1.0.1",
+      "versions": {
+        "1.0.1": {
+          "name": "Socalabs Compressor",
+          "creator": "Socalabs",
+          "license": "bsd-3-clause",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/Compressor/compressor.png",
+          "description": "Mono or Stereo Compressor\nSoft knee\nCool visualization\nFree\nWindows VST 32/64\nMac VST/AU 64",
+          "pageUrl": "https://socalabs.com/effects/compressor/",
+          "type": "effect",
+          "tags": [
+            "Compressor"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-win.zip",
+              "downloadSha256": "a625631782ddd8654280e1631fd08ce8d001c71965089d2f475f4ccb3a6b744f",
+              "fileSize": 7494000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-osx.zip",
+              "downloadSha256": "8c65be97e898f7541e1831202889bc29c7c7f3e0be742db8c6d1bb4f7b5965fd",
+              "fileSize": 2091000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/socalabs-delay": {
+      "slug": "socalabs/socalabs-delay",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "Socalabs Delay",
+          "creator": "Socalabs",
+          "license": "bsd-3-clause",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/Delay/delay.png",
+          "description": "Stereo delay\nTime or tempo sync\nFeedback and cross channel feedback\n120 seconds maximum delay\nFree\nWindows VST 32/64\nMac VST/AU 64\n",
+          "pageUrl": "https://socalabs.com/effects/delay/",
+          "type": "effect",
+          "tags": [
+            "Delay"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-win.zip",
+              "downloadSha256": "8372fce4e8bcde40812f8b66800c90188794d8097134d03b48ab81853d2c350a",
+              "fileSize": 7491000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-osx.zip",
+              "downloadSha256": "9316a9d33a52bdd06fd6e339e8cfd6b6a50d16c088e5cde2a4b0ae84b63f14d0",
+              "fileSize": 2072000
+            }
+          ]
+        }
+      }
+    },
+    "socalabs/voc": {
+      "slug": "socalabs/voc",
+      "latestVersion": "1.0.4",
+      "versions": {
+        "1.0.4": {
+          "name": "Voc",
+          "creator": "Socalabs",
+          "license": "lgpl-2.1",
+          "screenshotUrl": "https://central.owlplug.com/products/socalabs/Voc/voc.png",
+          "description": "Emulates glottis and shape of vocal tract\nConstrict oral cavity to change sound\nWaveform display\nFree / Open Source\nWindows VST 32/64\nMac VST/AU 32/64",
+          "pageUrl": "https://socalabs.com/synths/voc-vocal-synth/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win32/64 VST",
+              "targets": [
+                "win32",
+                "win64"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-win.zip",
+              "downloadSha256": "73e6cd76cf0f572b8d06d8472cb884f9e080f7e67b9d576f74540c7aeda5379b",
+              "fileSize": 7509000
+            },
+            {
+              "name": "OSX VST",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-osx.zip",
+              "downloadSha256": "234268ada2b2ad30ce7369b2758e6e1ba14167aedce8a44f6b1a77d32e2c3d1a",
+              "fileSize": 2085000
+            }
+          ]
+        }
+      }
+    },
     "synister/synister": {
       "slug": "synister/synister",
       "latestVersion": "0.1.0.2",
