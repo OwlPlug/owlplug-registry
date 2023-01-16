@@ -1,0 +1,33 @@
+---
+name: Socalabs Delay
+creator: Socalabs
+license: bsd-3-clause
+screenshotUrl: https://central.owlplug.com/products/socalabs/Delay/delay.png
+description: |
+  Stereo delay
+  Time or tempo sync
+  Feedback and cross channel feedback
+  120 seconds maximum delay
+  Free
+  Windows VST 32/64
+  Mac VST/AU 64
+pageUrl: https://socalabs.com/effects/delay/
+type: effect
+tags:
+- Delay
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-win.zip
+  downloadSha256: 8372fce4e8bcde40812f8b66800c90188794d8097134d03b48ab81853d2c350a
+  fileSize: 7491000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-osx.zip
+  downloadSha256: 9316a9d33a52bdd06fd6e339e8cfd6b6a50d16c088e5cde2a4b0ae84b63f14d0
+  fileSize: 2072000

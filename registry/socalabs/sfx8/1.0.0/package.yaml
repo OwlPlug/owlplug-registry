@@ -1,0 +1,35 @@
+---
+name: SFX8
+creator: Socalabs
+license: bsd-3-clause
+screenshotUrl: https://central.owlplug.com/products/socalabs/SFX8/sfx8.png
+description: |
+  Retro style sound effects – coin, laser, explosion, power up, jump & more
+  Inspired by the sounds of the sounds of NES
+  32 parameters per sounds effect
+  9 waves: square, saw, sine, noise, triangle, pink, tan, whistle, breaker
+  16 pads
+  Mutate existing sounds
+  Based on SFXR & BFXR. Audio engine is open source.
+  Windows VST 32/64
+  Mac VST/AU 32/64
+pageUrl: https://socalabs.com/synths/sfx8/
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-win.zip
+  downloadSha256: 06f8045f3bf05ce4402fa3d3b46f6c34e317cc70e8f96cab90c7736957b8775e
+  fileSize: 7590000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-osx.zip
+  downloadSha256: f6faa4fe8ffc348209d542263fa69ab2912b51160a8eeff375c6d7a11fd8d657
+  fileSize: 5805000

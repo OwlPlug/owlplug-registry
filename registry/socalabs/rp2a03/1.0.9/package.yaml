@@ -1,0 +1,33 @@
+---
+name: RP2A03
+creator: Socalabs
+license: lgpl-2.1
+screenshotUrl: https://central.owlplug.com/products/socalabs/RP2A03/rp2a03.png
+description: |
+  Emulates Ricoh 2A03 of the NTSC Nintendo Entertainment System
+  2 Square wave channels
+  1 Triangle wave channel
+  1 Noise channel
+  Waveform displayFree / Open Source
+  Windows VST 32/64
+  Mac VST/AU 64
+pageUrl: https://socalabs.com/synths/rp2a03/
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-win.zip
+  downloadSha256: d442c23daa2f9aa7412327d4992609b9561ff22796bd498f82b4b7e638e0978b
+  fileSize: 7513000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-osx.zip
+  downloadSha256: 32d04a74732a2738618a4789e7381fbb0365a52b2daa202dd8db68ea101f47a0
+  fileSize: 2098000

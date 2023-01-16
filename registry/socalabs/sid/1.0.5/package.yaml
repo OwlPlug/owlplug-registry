@@ -1,0 +1,35 @@
+---
+name: SID
+creator: Socalabs
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/socalabs/SID/sid.png
+description: |
+  Emulates MOS Technology SID of the Commodore 64
+  3 Oscillators
+  4 wave shapes: Square, Triangle, Saw, Noise
+  ADSR per oscillator
+  Ring modulation (replaces triangle output) and hard sync between oscillators
+  HP, BP, LP filters
+  Free / Open Source
+  Windows VST 32/64
+  Mac VST/AU 32/64
+pageUrl: https://socalabs.com/synths/sid/
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-win.zip
+  downloadSha256: 72ebf04e33137e39edaa19cccafba24f73050cf5950fd05a99962ccc919f6bc1
+  fileSize: 7527000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-osx.zip
+  downloadSha256: 1e8c32c358140e9aefd385c522313a882218ccd35d79424a747a2e56c888b23a
+  fileSize: 2128000
