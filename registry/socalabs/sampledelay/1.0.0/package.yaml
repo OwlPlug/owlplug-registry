@@ -1,0 +1,31 @@
+---
+name: Socalabs SampleDelay
+creator: Socalabs
+license: bsd-3-clause
+screenshotUrl: https://central.owlplug.com/products/socalabs/SampleDelay/sampledelay.png
+description: |
+  Mono or Stereo delay
+  Delay in samples or ms
+  Free
+  Windows VST 32/64
+  Mac VST/AU 64
+pageUrl: https://socalabs.com/effects/sampledelay/
+type: effect
+tags:
+- Delay
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-win.zip
+  downloadSha256: 88f845ad4a632bdea55a59de9181a4b4cee8dd315b093828a6ef3821f637f481
+  fileSize: 7490000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-osx.zip
+  downloadSha256: ab0d490314c760623cfbece2794770dd78ebceb98f1bf862969fe6fec743c5ba
+  fileSize: 2064000

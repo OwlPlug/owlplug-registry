@@ -1,0 +1,32 @@
+---
+name: Socalabs Compressor
+creator: Socalabs
+license: bsd-3-clause
+screenshotUrl: https://central.owlplug.com/products/socalabs/Compressor/compressor.png
+description: |-
+  Mono or Stereo Compressor
+  Soft knee
+  Cool visualization
+  Free
+  Windows VST 32/64
+  Mac VST/AU 64
+pageUrl: https://socalabs.com/effects/compressor/
+type: effect
+tags:
+- Compressor
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-win.zip
+  downloadSha256: a625631782ddd8654280e1631fd08ce8d001c71965089d2f475f4ccb3a6b744f
+  fileSize: 7494000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-osx.zip
+  downloadSha256: 8c65be97e898f7541e1831202889bc29c7c7f3e0be742db8c6d1bb4f7b5965fd
+  fileSize: 2091000

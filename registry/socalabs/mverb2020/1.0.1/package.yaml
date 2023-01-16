@@ -1,0 +1,33 @@
+---
+name: Mverb2020
+creator: Socalabs
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/socalabs/Mverb2020/mverb2020.png
+description: |
+  Based on Mverb by Martin Eastwood Audio
+  Studio quality, open-source reverb. Its release is intended to provide a practical demonstration of Dattorro’s figure-of-eight reverb structure and provide the open source community with a high quality reverb.
+  Martin Eastwood’s version of this plugin is no longer updated, this is simply a 64 bit update of his plugin with the standard SocaLabs UI.
+  Free
+  Windows VST 32/64
+  Mac VST/AU 64
+  Linux VST 64
+pageUrl: https://socalabs.com/effects/mverb2020/
+type: effect
+tags:
+- Reverb
+bundles:
+- name: Win32/64 VST
+  targets:
+  - win32
+  - win64
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-win.zip
+  downloadSha256: 09007f8b2e677f504686cdaeae37db18b9efdc3c015b484471aa8bc32ce62463
+  fileSize: 4085000
+- name: OSX VST
+  targets:
+  - osx
+  format: vst
+  downloadUrl: https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-osx.zip
+  downloadSha256: 82b7b750e9c3d7c1ac5dc2dc737d0e2fdc9c78e1a134c1a52d7b3a23b82dd25b
+  fileSize: 2027000
