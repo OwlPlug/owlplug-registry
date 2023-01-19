@@ -207,6 +207,56 @@
         }
       }
     },
+    "michael-jan/keyrepeat": {
+      "slug": "michael-jan/keyrepeat",
+      "latestVersion": "1.0.0",
+      "versions": {
+        "1.0.0": {
+          "name": "Key Repeat",
+          "creator": "Michael Jan",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/keyrepeat/keyrepeat.png",
+          "description": "Key Repeat is a free beat repeat sampler.\n\nUse it to record note repeats and stutters in a DAW.",
+          "pageUrl": "https://michael-jan.github.io/key-repeat/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Win64 VST3",
+              "targets": [
+                "win64"
+              ],
+              "format": "vst3",
+              "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-win64.zip",
+              "downloadSha256": "caba9fedee28cc7a2f16b140ecb2ed8558fdb1157cbe8c836c97dd342130eb48",
+              "fileSize": 1880000
+            },
+            {
+              "name": "OSX VST3",
+              "targets": [
+                "osx"
+              ],
+              "format": "vst3",
+              "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-osx.zip",
+              "downloadSha256": "a52484f7389668463fa4fb643eea028a1c5fbc67c7a4f776d085ba3b47748918",
+              "fileSize": 1366000
+            },
+            {
+              "name": "OSX AU",
+              "targets": [
+                "osx"
+              ],
+              "format": "au",
+              "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-au-osx.zip",
+              "downloadSha256": "206ade4b269db8eaf231934dd8f2c4b9cb57207b36f1fc92f7d37e88f76542a1",
+              "fileSize": 1340000
+            }
+          ]
+        }
+      }
+    },
     "mzuther/squeezer": {
       "slug": "mzuther/squeezer",
       "latestVersion": "2.5.4",
