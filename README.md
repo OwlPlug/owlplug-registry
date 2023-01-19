@@ -20,13 +20,12 @@ To submit a package to this repository, you should follow these simple steps:
 
 ### Author a package manifest
 
-Please, follow the [Package Creation Guidelines]()
+Please, follow the [Package Creation Guidelines](/doc/Package-creation-guidelines.md)
 
 #### Create a `package.yaml` file manually
 
 ```yml
 name: WobbleIzer
-slug: wobbleizer
 creator: Dropsnorz
 screenshotUrl: https://.../wobbleizer.png
 description: A frequency filter with LFO modulation
