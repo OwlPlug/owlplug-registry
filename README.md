@@ -10,11 +10,10 @@ This repository contains package manifest files for the **OwlPlug** main registr
 
 ## Submit a plugin
 
-To submit a package to this repository, you should follow these simple steps:
-
-* Follow the Contributing guidelines below.
-* [Author](#author-a-package-manifest) a package manifest
-* [Open](https://github.com/OwlPlug/owlplug-registry#open-your-pr) your pull request.
+To submit a package to this repository, you should follow the contributing guidelines below:
+* [Fork](https://github.com/OwlPlug/owlplug-registry/fork) the project.
+* [Author](#author-a-package-manifest) a package manifest.
+* [Open](#open-a-pull-request) your pull request.
 * Pull request will be validated by the [Automated Validation Pipeline](#automated-validation-pipeline)
 * If the previous validation succeed, your PR will be eligible to [Human Approval](#human-approval) stage.
 
@@ -47,12 +46,31 @@ bundles:
   downloadSha256: 17b98b8eda7271f16ec82571bed34ab45192621c98fcada217cde7c54bddb793
 ```
 
-#### Use the automated tool
+#### Create a package using the node.js CLI (Optional)
 
+The node.js CLI will help you to create the base structure for your `package.yaml` file. This tool is optional, you can create required file and folders manually.
+
+* **Requirements:**
+  * Git
+  * NodeJs
+
+```sh
+# Clone you Github registry forked repository
+git clone <fork_url>
+# Install dependencies
+npm install
+# Run package installation
+node index.js create package
 
 ```
-WIP
-```
+
+After the prompts, all files will be created in the `./registry` directory.
+
+### Open a pull request
+
+Once all changes as been applied to your local repository, you can commit, push changes to a fork and open a pull request on this repository.
+
+Pull request example: [Add pentagrampro/owlbass 1.0.0](https://github.com/OwlPlug/owlplug-registry/pull/39)
 
 ### Automated validation pipeline
 
