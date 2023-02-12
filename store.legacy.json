@@ -184,6 +184,32 @@
       ]
     },
     {
+      "name": "BlackBird",
+      "creator": "Dmitry Khrykin",
+      "license": "gpl-3.0",
+      "screenshotUrl": "https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird.png",
+      "description": "Analog-inspired software synth with its own voice.\n\nTwo 3-waveform unison oscillators\nLow-pass filter\nSingle envelope for velocity, filter cutoff, and resonance\nBuilt-in Reverb\nWheel modulation",
+      "pageUrl": "https://khrykin.github.io/BlackBird/",
+      "type": "instrument",
+      "stage": "beta",
+      "tags": [
+        "Synth",
+        "Analog"
+      ],
+      "bundles": [
+        {
+          "name": "Release Win64",
+          "targets": [
+            "win64"
+          ],
+          "format": "vst3",
+          "downloadUrl": "https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird-vst3-win64.zip",
+          "downloadSha256": "04402c1cdcba81d82094b9860d727fd60606532d37286a0445923b0a26729c4f",
+          "fileSize": 1730000
+        }
+      ]
+    },
+    {
       "name": "Key Repeat",
       "creator": "Michael Jan",
       "license": "gpl-3.0",
