@@ -5,7 +5,6 @@ license: gpl-3.0
 screenshotUrl: https://central.owlplug.com/products/dexed/dexed.png
 description: Synthesizer closely modeled on the Yamaha DX7
 pageUrl: https://asb2m10.github.io/dexed/
-version: 1.0.0.0
 type: instrument
 tags:
 - Synth
