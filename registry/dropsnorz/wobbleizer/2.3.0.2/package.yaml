@@ -1,12 +1,10 @@
 ---
 name: Wobbleizer
-slug: wobbleizer
 creator: Dropsnorz
 license: mit
 screenshotUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/wobbleizer.png
 description: A frequency filter with LFO modulation
 pageUrl: https://github.com/dropsnorz/wobbleizer
-version: 2.3.0.2
 technicalUid: '2003788408'
 type: effect
 stage: beta
