@@ -201,6 +201,56 @@
         }
       }
     },
+    "greatest-ape/octasine": {
+      "slug": "greatest-ape/octasine",
+      "latestVersion": "0.8.3",
+      "versions": {
+        "0.8.3": {
+          "name": "OctaSine",
+          "creator": "Joakim Frostegard",
+          "license": "agpl-3.0",
+          "screenshotUrl": "https://central.owlplug.com/products/greatest-ape/octasine/0.8.3/octasine.png",
+          "description": "Frequency modulation synthesizer plugin (VST2, CLAP). Runs on macOS, Windows and Linux.",
+          "pageUrl": "https://www.octasine.com/",
+          "type": "instrument",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Release Win64",
+              "targets": [
+                "win64"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Windows.zip",
+              "downloadSha256": "537577aba33fcd32ba180b7959983fd1c13afc99ed038fc177af422c233e845e",
+              "fileSize": 2730000
+            },
+            {
+              "name": "Release macOS",
+              "targets": [
+                "osx"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-macOS.zip",
+              "downloadSha256": "750c92dbf8aacfa11d75a93bac648732bfcb41b31d9e1b21bf1c8cf3fbc03637",
+              "fileSize": 6200000
+            },
+            {
+              "name": "Release Linux64",
+              "targets": [
+                "linux64"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Ubuntu-20_04.zip",
+              "downloadSha256": "2b1388f4041cd644540b6cf63e1b6a9b3ba13ff641c6571bd2270887acf09262",
+              "fileSize": 5200000
+            }
+          ]
+        }
+      }
+    },
     "khrykin/blackbird": {
       "slug": "khrykin/blackbird",
       "latestVersion": "0.1.0",
