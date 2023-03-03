@@ -69,6 +69,40 @@
       ]
     },
     {
+      "name": "CHOW",
+      "creator": "Jatin Chowdhury",
+      "license": "gpl-3.0",
+      "screenshotUrl": "https://central.owlplug.com/products/chowdsp/chow/1.0.0/chow.png",
+      "description": "CHOW is a digital ditortion effect designed for maximum truculence, somewhere between a true half-wave rectifier and a noisy vintage compressor. Useful for mixing guitars, drums, even vocals when a heavily degraded sound is desired. Feel free to build and use for your own enjoyment!\n\nCHOW is currently available in the following formats:\n- VST\n- VST3\n- AU",
+      "pageUrl": "https://github.com/Chowdhury-DSP/CHOW",
+      "type": "effect",
+      "tags": [
+        "Distortion"
+      ],
+      "bundles": [
+        {
+          "name": "Windows Release",
+          "targets": [
+            "win64"
+          ],
+          "format": "various",
+          "downloadUrl": "https://github.com/Chowdhury-DSP/CHOW/releases/download/1.0.0/CHOW-win.zip",
+          "downloadSha256": "ffc3a8fad2e6044467cc413ec2929d6f8ff4c29dc3a12ab5828c14ec09a55f80",
+          "fileSize": 5317000
+        },
+        {
+          "name": "macOS Release",
+          "targets": [
+            "osx"
+          ],
+          "format": "various",
+          "downloadUrl": "https://github.com/Chowdhury-DSP/CHOW/releases/download/1.0.0/CHOW-mac.zip",
+          "downloadSha256": "5e2510d6794e308169b6fab3d0874845d608dd66447d78b9ed9a643d0ac012e5",
+          "fileSize": 1982000
+        }
+      ]
+    },
+    {
       "name": "Dexed",
       "creator": "Pascal Gauthier",
       "license": "gpl-3.0",
