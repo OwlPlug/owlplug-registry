@@ -19,7 +19,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps:
       - name: 'Download pre analysis artifacts'
-        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         with:
           script: |
             const fs = require('fs');
@@ -44,7 +44,7 @@ jobs:
         run: unzip pr-artifacts.zip
 
       - name: 'Verify bundles.json file and URL format'
-        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         with:
           script: |
             const fs = require('fs')
@@ -65,7 +65,7 @@ jobs:
             }
 
       - name: 'Verify bundles.json size'
-        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         env:
           PR_NUMBER: ${{ env.pr_number }}
         with:
@@ -138,7 +138,7 @@ jobs:
           files: "${{join(fromJSON(env.files_json),'\n')}}"
 
       - name: Publish AV report
-        uses: actions/github-script@98814c53be79b1d30f795b907e553d8679345975 # v6
+        uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
           PR_NUMBER: ${{ env.pr_number }}
