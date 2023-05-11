@@ -1,0 +1,21 @@
+---
+name: Drops
+creator: clearly-broken-software
+license: gpl-3.0
+screenshotUrl: https://central.owlplug.com/products/clearly-broken-software/drops/1.0-beta.2/screenshot.png
+description: |-
+  Drops is a single audio file sample player plugin in lv2 and vst format for linux.
+
+  Load an audio file, play it, loop it, pitch shift it, and make it into something entirely new.
+pageUrl: https://github.com/clearly-broken-software/drops
+type: instrument
+tags:
+- Synth
+bundles:
+- name: Linux Release
+  targets:
+  - linux64
+  format: various
+  downloadUrl: https://github.com/clearly-broken-software/drops/releases/download/v1.0-beta.2/drops_binaries.zip
+  downloadSha256: 0cb3d4dfed087d68ad59c261d2440bd199e97a2803d4229d3614bf748abd1d4b
+  fileSize: 4131243
