@@ -131,7 +131,7 @@ jobs:
 
       - name: VirusTotal Scan
         id: vt-scan
-        uses: crazy-max/ghaction-virustotal@6d0c025d8231cb0687a3173a515177b3cac8e064 # v3
+        uses: crazy-max/ghaction-virustotal@92a6081d9aab8f8ef3d9081e8bb264aaccc9e74d # v3
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           request_rate: 4
