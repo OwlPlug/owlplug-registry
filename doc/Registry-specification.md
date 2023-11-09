@@ -23,6 +23,49 @@ The root object is a [Registry](#Registry) object.
 ### Example
 
 ```json
+{
+  "name": "OwlPlug Registry",
+  "url": "https://registry.owlplug.com",
+  "schemaVersion": "1.2.0",
+  "packages": {
+      "dropsnorz/wobbleizer": {
+      "slug": "dropsnorz/wobbleizer",
+      "latestVersion": "2.3.0.2",
+      "versions": {
+        "2.3.0.2": {
+          "name": "Wobbleizer",
+          "creator": "Dropsnorz",
+          "license": "mit",
+          "screenshotUrl": "https://central.owlplug.com/products/com.dropsnorz.wobbleizer/wobbleizer.png",
+          "description": "A frequency filter with LFO modulation",
+          "pageUrl": "https://github.com/dropsnorz/wobbleizer",
+          "technicalUid": "2003788408",
+          "type": "effect",
+          "stage": "beta",
+          "tags": ["Filter","LFO"],
+          "bundles": [
+            {
+              "name": "Wobbleizer Win32/64",
+              "targets": ["win32","win64"],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip",
+              "downloadSha256": "35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd",
+              "fileSize": 2858000
+            },
+            {
+              "name": "Wobbleizer Osx",
+              "targets": ["osx"],
+              "format": "vst",
+              "downloadUrl": "https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-osx.zip",
+              "downloadSha256": "17b98b8eda7271f16ec82571bed34ab45192621c98fcada217cde7c54bddb793",
+              "fileSize": 3169000
+            }
+          ]
+        }
+      }
+    },
+  }
+}
 
 ```
 
@@ -30,7 +73,7 @@ The root object is a [Registry](#Registry) object.
 
 ### Registry
 
-Document root object. Provides general information about the registry and carries a list of products.
+Document root object. Provides general information about the registry and carries a list of packages.
 
 Field Name | Type | Description
 ---|:---:|---
@@ -46,19 +89,19 @@ A Package is basically an Audio Plugin product. For example, `Serum`, `Massive`,
 Field Name | Type | Description
 ---|:---:|---
 slug | `string` | **REQUIRED**. Unique lower case and hyphen-separated identifier. 255 characters max and must match `^[a-z0-9]+(?:[a-z0-9]+)*$`. Examples: `wobbleizer`, `my-plugin`, `an-other-slug`.  
-latestVersion | `string` | **REQUIRED**. The name of the product/plugin. 255 characters max.
+latestVersion | `string` | **REQUIRED**. The latest version key in the `versions` associative array.
 versions | `object` | **REQUIRED**. An associative array with version string as key and [PackageVersion](#PackageVersion) as value. Can be empty.
 
 
 ### PackageVersion
 
 A PackageVersion is a released version for a [Package](#Package). For example `Serum 1.3.5.7` and `Serum 1.3.6.3` are two PackageVersion for the `Serum` Package.
-Each PackageVersion conains a list of [Bundle](#Bundle)
+Each PackageVersion contains a list of [Bundle](#Bundle)
 
 Field Name | Type | Description
 ---|:---:|---
-name | `string` | **REQUIRED**. The name of the product/plugin. 255 characters max.
-creator | `string` | **REQUIRED**. Product creator / manufacturer name. 255 characters max.
+name | `string` | **REQUIRED**. The name of the plugin. 255 characters max.
+creator | `string` | **REQUIRED**. Plugin creator / manufacturer name. 255 characters max.
 license | `string` | Distribution license. Free field but keep it short. Use the [Github keywords](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/licensing-a-repository) like `gpl-3.0`, `mit`, `...` as most as possible for consistency. 255 character max.
 type | `string` | **REQUIRED**. Must be `instrument` for VSTi or `effect` for VST/VSTfx or `unknown`. 255 characters max.
 stage | `string` | Can be `beta` for an early release, `demo` for a limited release or `release` for stable build. 255 characters max.
