@@ -474,6 +474,57 @@
         }
       }
     },
+    "midilab/jc303": {
+      "slug": "midilab/jc303",
+      "latestVersion": "0.9.1",
+      "versions": {
+        "0.9.1": {
+          "name": "JC303",
+          "creator": "MidiLab",
+          "license": "gpl-3.0",
+          "screenshotUrl": "https://raw.githubusercontent.com/midilab/jc303/main/img/jc303.png",
+          "description": "A Free Roland TB-303 Plugin for Windows, MacOS and Linux: VST2, VST3, LV2 and AU. A Juce port of Open303 engine.",
+          "pageUrl": "https://midilab.co/jc303/",
+          "type": "instrument",
+          "stage": "beta",
+          "tags": [
+            "Synth"
+          ],
+          "bundles": [
+            {
+              "name": "Release Win64",
+              "targets": [
+                "win64"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-win64-plugins.zip",
+              "downloadSha256": "950506b6248d21f13ec1d1b2d921cf3d7d915121d7270b5ef1ef26b8e08200c8",
+              "fileSize": 2900000
+            },
+            {
+              "name": "Release macOS",
+              "targets": [
+                "osx"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-macos-universal-plugins.zip",
+              "downloadSha256": "b814da84ce666a4393296fb9e4605fd8994f897ffc3760f86e623147199ba932",
+              "fileSize": 15403000
+            },
+            {
+              "name": "Release Linux64",
+              "targets": [
+                "linux64"
+              ],
+              "format": "various",
+              "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-linux64-plugins.zip",
+              "downloadSha256": "a1c21ebcac5fa4a913fcf5e74b7af46f78ece4d45c0b4ac90689d17a093f1eae",
+              "fileSize": 10991000
+            }
+          ]
+        }
+      }
+    },
     "mzuther/squeezer": {
       "slug": "mzuther/squeezer",
       "latestVersion": "2.5.4",
