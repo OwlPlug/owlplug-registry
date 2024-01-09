@@ -1,12 +1,16 @@
 # Add 'Registry' to any changes within 'registry' folder or any subfolders
 Registry:
-- registry/**/*
+- changed-files:
+  - any-glob-to-any-file: registry/**
 
-Maintenance: 
-- index.js
-- package.json
-- .gitignore
-- .github/**/*
+Maintenance:
+- changed-files:
+  - any-glob-to-any-file:
+    - index.js
+    - package.json
+    - .gitignore
+    - .github/**
 
 Workflow:
-- .github/**/*
+- changed-files:
+  - any-glob-to-any-file: github/workflows/**
