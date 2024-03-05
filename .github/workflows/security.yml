@@ -19,7 +19,7 @@ jobs:
       github.event.workflow_run.conclusion == 'success'
     steps:
       - name: 'Download pre analysis artifacts'
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v6
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           script: |
             const fs = require('fs');
@@ -44,7 +44,7 @@ jobs:
         run: unzip pr-artifacts.zip
 
       - name: 'Verify bundles.json file and URL format'
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v6
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         with:
           script: |
             const fs = require('fs')
@@ -65,7 +65,7 @@ jobs:
             }
 
       - name: 'Verify bundles.json size'
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v6
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         env:
           PR_NUMBER: ${{ env.pr_number }}
         with:
@@ -131,14 +131,14 @@ jobs:
 
       - name: VirusTotal Scan
         id: vt-scan
-        uses: crazy-max/ghaction-virustotal@92a6081d9aab8f8ef3d9081e8bb264aaccc9e74d # v3
+        uses: crazy-max/ghaction-virustotal@92a6081d9aab8f8ef3d9081e8bb264aaccc9e74d # v4.0.0
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           request_rate: 4
           files: "${{join(fromJSON(env.files_json),'\n')}}"
 
       - name: Publish AV report
-        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v6
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         env:
           VT_OUTPUT: ${{ steps.vt-scan.outputs.analysis }}
           PR_NUMBER: ${{ env.pr_number }}
