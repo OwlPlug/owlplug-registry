@@ -13,21 +13,28 @@ bundles:
 - name: Release Win64
   targets:
   - win64
-  format: various
+  formats:
+  - lv2
+  - vst3
   downloadUrl: https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-win64-plugins.zip
   downloadSha256: 950506b6248d21f13ec1d1b2d921cf3d7d915121d7270b5ef1ef26b8e08200c8
   fileSize: 2900000
 - name: Release macOS
   targets:
   - osx
-  format: various
+  formats:
+  - lv2
+  - au
+  - vst3
   downloadUrl: https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-macos-universal-plugins.zip
   downloadSha256: b814da84ce666a4393296fb9e4605fd8994f897ffc3760f86e623147199ba932
   fileSize: 15403000
 - name: Release Linux64
   targets:
   - linux64
-  format: various
+  formats:
+  - lv2
+  - vst3
   downloadUrl: https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-linux64-plugins.zip
   downloadSha256: a1c21ebcac5fa4a913fcf5e74b7af46f78ece4d45c0b4ac90689d17a093f1eae
   fileSize: 10991000

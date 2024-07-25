@@ -14,7 +14,8 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/synister/bundles/synister-vst-win.zip
   downloadSha256: 3f99b18b72a3ab49c8e1d04ba8bb3229e8ed28bf03dcf31d9b0128f7ed79482f
   fileSize: 3500000

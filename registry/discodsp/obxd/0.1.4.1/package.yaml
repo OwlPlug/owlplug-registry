@@ -18,14 +18,16 @@ bundles:
 - name: Win32 VST
   targets:
   - win32
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win32.zip
   downloadSha256: 51a161d7996d70ca179f80855d755aad95b3968ab7ee3a9476f605664f46856e
   fileSize: 1965000
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win64.zip
   downloadSha256: 64d9c4ce2304fc0abf7bc3cce2812718522ef68d664c7c0bb18ad46e434aae6d
   fileSize: 2229000

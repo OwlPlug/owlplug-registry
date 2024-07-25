@@ -16,14 +16,16 @@ bundles:
 - name: Win32 VST
   targets:
   - win32
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win32.zip
   downloadSha256: f945804921b34de9b6668106153adce38a70b6ce0799876169f8cb4da88b0dba
   fileSize: 449000
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win64.zip
   downloadSha256: 00edda4d5e02563acfcb1ee063aefdf57ef6d96b7dc7b945c9be50649541855c
   fileSize: 467000

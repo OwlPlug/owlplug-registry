@@ -35,13 +35,15 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://.../wobbleizer-vst-win32win64.zip
   downloadSha256: 35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd
 - name: Wobx Osx
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://..../wobbleizer-vst-osx.zip
   downloadSha256: 17b98b8eda7271f16ec82571bed34ab45192621c98fcada217cde7c54bddb793
 ```

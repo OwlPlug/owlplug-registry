@@ -14,7 +14,8 @@ bundles:
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats:
+  - vst
   technicalUid: '1935111024'
   downloadUrl: https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-vst-win64.zip
   downloadSha256: ad461973ac73c775a21a393d36dbff1373389af8b50118aa0f76c46c780c2900
@@ -22,14 +23,16 @@ bundles:
 - name: Linux64 VST
   targets:
   - linux64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-vst-linux64.zip
   downloadSha256: 6c0641a206f02cd9960870c9cec2a2e2e0a480ac489c927c355369a14c4cee10
   fileSize: 500000
 - name: Linux64 LV2
   targets:
   - linux64
-  format: lv2
+  formats:
+  - lv2
   downloadUrl: https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-lv2-linux64.zip
   downloadSha256: ba0d2976151fd7bda38342d9dbf7499262597d978ddcd826d1e73e7791ae47e5
   fileSize: 500000

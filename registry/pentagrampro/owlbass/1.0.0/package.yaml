@@ -15,7 +15,8 @@ bundles:
   targets:
   - win64
   technicalUid: '1148746297'
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/owlbass/bundles/owlbass-vst-win64.zip
   downloadSha256: f12222b8a486de34bbd505162fce98eefc9860c3785e97d26ffd1f362624411f
   fileSize: 1708000

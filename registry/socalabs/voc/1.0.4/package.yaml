@@ -19,14 +19,16 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-win.zip
   downloadSha256: 73e6cd76cf0f572b8d06d8472cb884f9e080f7e67b9d576f74540c7aeda5379b
   fileSize: 7509000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-osx.zip
   downloadSha256: 234268ada2b2ad30ce7369b2758e6e1ba14167aedce8a44f6b1a77d32e2c3d1a
   fileSize: 2085000

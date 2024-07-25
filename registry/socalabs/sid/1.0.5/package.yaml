@@ -22,14 +22,16 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-win.zip
   downloadSha256: 72ebf04e33137e39edaa19cccafba24f73050cf5950fd05a99962ccc919f6bc1
   fileSize: 7527000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-osx.zip
   downloadSha256: 1e8c32c358140e9aefd385c522313a882218ccd35d79424a747a2e56c888b23a
   fileSize: 2128000

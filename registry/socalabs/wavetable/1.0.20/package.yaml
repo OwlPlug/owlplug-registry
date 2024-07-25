@@ -12,21 +12,28 @@ bundles:
 - name: Win64 Bundle
   targets:
   - win64
-  format: various
+  formats:
+  - vst
+  - vst3
   downloadUrl: https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Win.zip
   downloadSha256: cba4d56d709a3a828ae75d73c16f2e6f91516e26f2c9b3cc07e65effa4bf84b1
   fileSize: 102000000
 - name: OSX Bundle
   targets:
   - osx
-  format: various
+  formats:
+  - vst
+  - vst3
+  - au
   downloadUrl: https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Mac.zip
   downloadSha256: c2152604d37b526afe170b2cb858903006b7ef717a9906dcfe153279e1385b04
   fileSize: 315000000
 - name: Linux64 Bundle
   targets:
   - linux64
-  format: various
+  formats:
+  - lv2
+  - vst3
   downloadUrl: https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Linux.zip
   downloadSha256: 9286baa304c078a5adc5b61ed3b577baa7c10b8d597db6d49f696339c7d5f6a8
   fileSize: 158000000
