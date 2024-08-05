@@ -21,7 +21,8 @@ bundles:
 - name: Release Win64
   targets:
   - win64
-  format: vst3
+  formats:
+  - vst3
   downloadUrl: https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird-vst3-win64.zip
   downloadSha256: 04402c1cdcba81d82094b9860d727fd60606532d37286a0445923b0a26729c4f
   fileSize: 1730000

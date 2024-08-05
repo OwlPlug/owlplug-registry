@@ -15,7 +15,8 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/org.tytel.helm/bundles/helm-vst-win.zip
   downloadSha256: fd8352fbeff627b1fbd3b9e729c62a02b21fb7cf373158f5442d82e1a78ecea4
   fileSize: 5700000

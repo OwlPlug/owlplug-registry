@@ -17,35 +17,45 @@ bundles:
 - name: Win32 Release
   targets:
   - win32
-  format: various
+  formats:
+  - vst
+  - lv2
   downloadUrl: https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-win32.zip
   downloadSha256: 480c305f2b32da25ee26f4e8bf35673113559fda1399880a42e11f8be8334b11
   fileSize: 5999647
 - name: Win64 Release
   targets:
   - win64
-  format: various
+  formats:
+  - vst
+  - lv2
   downloadUrl: https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-win64.zip
   downloadSha256: 238725071586c29746f77ff205afcc407809f454ee9e6c5d9bde0362dc2e91a5
   fileSize: 5988233
 - name: Linux32 Release
   targets:
   - linux32
-  format: various
+  formats:
+  - vst
+  - lv2
   downloadUrl: https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-linux32.zip
   downloadSha256: 1bb90473545f114b0bba110eb5cd5e60c1f40217a83fa3dad62d9ba3578f63d2
   fileSize: 1433217
 - name: Linux64 Release
   targets:
   - linux64
-  format: various
+  formats:
+  - vst
+  - lv2
   downloadUrl: https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-linux64.zip
   downloadSha256: 714c10fa2f6c0163b98c3186361f6ed673eb67b566d8e81284da3babff67f581
   fileSize: 1437316
 - name: macOS Release
   targets:
   - osx
-  format: various
+  formats:
+  - vst
+  - lv2
   downloadUrl: https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-macos.zip
   downloadSha256: d0068e3eefb24265880702f2e11d8129f8b5acfd3a3a5d0faa9a6ecb136ac02c
   fileSize: 5123506

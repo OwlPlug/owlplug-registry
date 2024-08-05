@@ -24,21 +24,24 @@ bundles:
 - name: Win32 VST
   targets:
   - win32
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-win32.zip
   downloadSha256: 29dfca9cbdc7a176aa755966a317e17605ef96de28643d0c0927497098d2a718
   fileSize: 2704000
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-win64.zip
   downloadSha256: f16449ef5c869d992500d8e00bb767cbe53ed3f921503a2cd94aea50d4dd4462
   fileSize: 2981000
 - name: MacOs VST
   targets:
   - osx
-  format: vst
+  formats: 
+  - vst
   downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-osx.zip
   downloadSha256: 5b288334cc47297a6fc6ffdd004e2ff91640560773e7166f65ff4f8ff28a3ae7
   fileSize: 2957000

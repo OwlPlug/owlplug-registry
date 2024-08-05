@@ -22,14 +22,16 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-win.zip
   downloadSha256: bb1869a56bff272fa90c4d3d673db11ce520d05b85660f3951e0eb5fb931b883
   fileSize: 7511000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-osx.zip
   downloadSha256: 1999cbb572e133ae99eb103d1c7ba69a98ccb6c6a087e1f7fd6a37200ffc747d
   fileSize: 2101000

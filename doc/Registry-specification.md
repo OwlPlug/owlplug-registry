@@ -81,7 +81,8 @@ Field Name | Type | Description
 ---|:---:|---
 name | `string` | **REQUIRED**. The name of the bundle. 255 characters max.
 targets | `array` | **REQUIRED**. Array of plugin [Target](#Target). Supported environements by the bundle.
-format | `string` | **REQUIRED**. Plugin format. Must be `vst`, `vst3`, `au`, `lv2`, `various` or `unknown`.
+formats | `array` | **REQUIRED**. List of plugins formats in the bundle. Items must be `vst`, `vst3`, `au`, `lv2`, `clap`, `aax` or `unknown`.
+format | `string` | *Deprecated*. Use Bundle `formats` field instead.
 technicalUid | `string` | Bundle/Plugin unique id. Overload parent *registry.packages[p].versions[v].technicalUid* property.
 downloadUrl | `string` | **REQUIRED**. Bundle download url. 255 characters max. Check [Bundle file structure](#Bundle_file_structure)
 downloadSha256 | `string` | **REQUIRED**. SHA256 digest for the file download from `downloadUrl`

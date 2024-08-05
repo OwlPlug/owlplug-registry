@@ -14,49 +14,56 @@ bundles:
 - name: Win64 VST3
   targets:
   - win64
-  format: vst3
+  formats:
+  - vst3
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win64.zip
   downloadSha256: 6b5363af5407d762bcddaf7956b1f0cd680523e115ee676e9fe4a8417bd14452
   fileSize: 2040000
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win64.zip
   downloadSha256: ab41c7bf23fbc7f91d9831da196dccd9b695d03475090d0009245b6d7af7818a
   fileSize: 1980000
 - name: Win32 VST3
   targets:
   - win32
-  format: vst3
+  formats:
+  - vst3
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win32.zip
   downloadSha256: 70b0f50a114406c89d1520741cc5b657db2486d35a8b11f87404e22fbd6d60ce
   fileSize: 1683000
 - name: Win32 VST
   targets:
   - win32
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win32.zip
   downloadSha256: 1e7efc2bd8f95609ea30f973b501a7955f044e840be70fc76d15b01ef2c325a3
   fileSize: 3332000
 - name: OSX VST3
   targets:
   - osx
-  format: vst3
+  formats:
+  - vst3
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-osx.zip
   downloadSha256: 688c294afeccdf74fc615824925dc2d5413c140bb4973cbc630ad2622aafc94f
   fileSize: 2185000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-osx.zip
   downloadSha256: 28deb225cfbd11ccdef679bda2d9daa8d54a012633c769258f581e67f977ba0c
   fileSize: 2097000
 - name: Linux64 VST
   targets:
   - linux64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-linux64.zip
   downloadSha256: 0798329475ced82ed2975f60a657065492fba32512943ce36d53034adb164cdc
   fileSize: 3443000

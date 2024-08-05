@@ -12,21 +12,27 @@ bundles:
 - name: Release Win64
   targets:
   - win64
-  format: various
+  formats:
+  - vst
+  - clap
   downloadUrl: https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Windows.zip
   downloadSha256: 537577aba33fcd32ba180b7959983fd1c13afc99ed038fc177af422c233e845e
   fileSize: 2730000
 - name: Release macOS
   targets:
   - osx
-  format: various
+  formats:
+  - vst
+  - clap
   downloadUrl: https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-macOS.zip
   downloadSha256: 750c92dbf8aacfa11d75a93bac648732bfcb41b31d9e1b21bf1c8cf3fbc03637
   fileSize: 6200000
 - name: Release Linux64
   targets:
   - linux64
-  format: various
+  formats:
+  - vst
+  - clap
   downloadUrl: https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Ubuntu-20_04.zip
   downloadSha256: 2b1388f4041cd644540b6cf63e1b6a9b3ba13ff641c6571bd2270887acf09262
   fileSize: 5200000
