@@ -31,7 +31,7 @@ description: A frequency filter with LFO modulation
 pageUrl: https://github.com/dropsnorz/wobbleizer
 type: effect
 bundles:
-- name: Wobx Win32/64
+- name: VST Win32/64
   targets:
   - win32
   - win64
@@ -39,7 +39,7 @@ bundles:
   - vst
   downloadUrl: https://.../wobbleizer-vst-win32win64.zip
   downloadSha256: 35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd
-- name: Wobx Osx
+- name: VST MacOs
   targets:
   - osx
   formats:
