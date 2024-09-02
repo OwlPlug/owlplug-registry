@@ -20,7 +20,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-win32.zip",
           "downloadSha256": "e891942d0518020a603732fce25706ccc8272f549939bea990f929bb90ab1928",
           "fileSize": 1410000
@@ -31,7 +33,9 @@
             "win64"
           ],
           "technicalUid": "1097753715",
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-win64.zip",
           "downloadSha256": "3af35f02121a3c7ad6375bfe9c29a382f5882fa443bbf4c2df347a255c0edf2a",
           "fileSize": 1724000
@@ -41,7 +45,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-osx.zip",
           "downloadSha256": "f83196ca17aa2ef91c739c17ef0af3db9b7520d2b5e534b295d8af121bc95df9",
           "fileSize": 1568000
@@ -51,7 +57,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-linux64.zip",
           "downloadSha256": "bc91ea7055fa13df3065aeff89faf5d2ca0201f322a8f5fc3dd030ba1f6b65c6",
           "fileSize": 3185000
@@ -61,7 +69,9 @@
           "targets": [
             "linux32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/andes/bundles/andes-vst-linux32.zip",
           "downloadSha256": "66d52c05e72531a9b2cdca9b06c5f8a26eb0562dd1fc842cbb9dbbaf2e56385a",
           "fileSize": 3185000
@@ -85,7 +95,10 @@
           "targets": [
             "win64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/Chowdhury-DSP/CHOW/releases/download/1.0.0/CHOW-win.zip",
           "downloadSha256": "ffc3a8fad2e6044467cc413ec2929d6f8ff4c29dc3a12ab5828c14ec09a55f80",
           "fileSize": 5317000
@@ -95,7 +108,10 @@
           "targets": [
             "osx"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "au"
+          ],
           "downloadUrl": "https://github.com/Chowdhury-DSP/CHOW/releases/download/1.0.0/CHOW-mac.zip",
           "downloadSha256": "5e2510d6794e308169b6fab3d0874845d608dd66447d78b9ed9a643d0ac012e5",
           "fileSize": 1982000
@@ -119,7 +135,10 @@
           "targets": [
             "linux64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/drops/releases/download/v1.0-beta.2/drops_binaries.zip",
           "downloadSha256": "0cb3d4dfed087d68ad59c261d2440bd199e97a2803d4229d3614bf748abd1d4b",
           "fileSize": 4131243
@@ -144,7 +163,10 @@
           "targets": [
             "win32"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-win32.zip",
           "downloadSha256": "480c305f2b32da25ee26f4e8bf35673113559fda1399880a42e11f8be8334b11",
           "fileSize": 5999647
@@ -154,7 +176,10 @@
           "targets": [
             "win64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-win64.zip",
           "downloadSha256": "238725071586c29746f77ff205afcc407809f454ee9e6c5d9bde0362dc2e91a5",
           "fileSize": 5988233
@@ -164,7 +189,10 @@
           "targets": [
             "linux32"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-linux32.zip",
           "downloadSha256": "1bb90473545f114b0bba110eb5cd5e60c1f40217a83fa3dad62d9ba3578f63d2",
           "fileSize": 1433217
@@ -174,7 +202,10 @@
           "targets": [
             "linux64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-linux64.zip",
           "downloadSha256": "714c10fa2f6c0163b98c3186361f6ed673eb67b566d8e81284da3babff67f581",
           "fileSize": 1437316
@@ -184,7 +215,10 @@
           "targets": [
             "osx"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/clearly-broken-software/ninjas2/releases/download/v0.2.0/ninjas2-macos.zip",
           "downloadSha256": "d0068e3eefb24265880702f2e11d8129f8b5acfd3a3a5d0faa9a6ecb136ac02c",
           "fileSize": 5123506
@@ -209,7 +243,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/dexed/bundles/dexed-vst-win.zip",
           "downloadSha256": "a5f94527dbbbd46af6d2daed8fc0d76d03d08f2345e428c0dab550bdf2562944",
           "fileSize": 3900000
@@ -219,7 +255,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/dexed/bundles/dexed-vst3-linux64.zip",
           "downloadSha256": "54faa8d58cd1526fd86241246e887b3814b6a4a71bdaf6fb66691bcd0f106481",
           "fileSize": 3347000
@@ -245,7 +283,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/obxd/bundles/obxd-vst-win32.zip",
           "downloadSha256": "51a161d7996d70ca179f80855d755aad95b3968ab7ee3a9476f605664f46856e",
           "fileSize": 1965000
@@ -255,7 +295,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/obxd/bundles/obxd-vst-win64.zip",
           "downloadSha256": "64d9c4ce2304fc0abf7bc3cce2812718522ef68d664c7c0bb18ad46e434aae6d",
           "fileSize": 2229000
@@ -280,7 +322,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "lv2",
+          "formats": [
+            "lv2"
+          ],
           "downloadUrl": "https://github.com/Dougal-s/Aether/releases/download/v1.2.1/Aether-v1.2.1-Linux.tar.xz",
           "downloadSha256": "01d196a1b611062b3219ea3a994b54c70b379bbf6e5b15e2197c863907434dd6",
           "fileSize": 415000
@@ -308,7 +352,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip",
           "downloadSha256": "35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd",
           "fileSize": 2858000
@@ -318,7 +364,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-osx.zip",
           "downloadSha256": "17b98b8eda7271f16ec82571bed34ab45192621c98fcada217cde7c54bddb793",
           "fileSize": 3169000
@@ -342,7 +390,10 @@
           "targets": [
             "win64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "clap"
+          ],
           "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Windows.zip",
           "downloadSha256": "537577aba33fcd32ba180b7959983fd1c13afc99ed038fc177af422c233e845e",
           "fileSize": 2730000
@@ -352,7 +403,10 @@
           "targets": [
             "osx"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "clap"
+          ],
           "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-macOS.zip",
           "downloadSha256": "750c92dbf8aacfa11d75a93bac648732bfcb41b31d9e1b21bf1c8cf3fbc03637",
           "fileSize": 6200000
@@ -362,7 +416,10 @@
           "targets": [
             "linux64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "clap"
+          ],
           "downloadUrl": "https://github.com/greatest-ape/OctaSine/releases/download/v0.8.3/OctaSine-v0.8.3-Ubuntu-20_04.zip",
           "downloadSha256": "2b1388f4041cd644540b6cf63e1b6a9b3ba13ff641c6571bd2270887acf09262",
           "fileSize": 5200000
@@ -388,7 +445,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird-vst3-win64.zip",
           "downloadSha256": "04402c1cdcba81d82094b9860d727fd60606532d37286a0445923b0a26729c4f",
           "fileSize": 1730000
@@ -412,7 +471,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-win64.zip",
           "downloadSha256": "caba9fedee28cc7a2f16b140ecb2ed8558fdb1157cbe8c836c97dd342130eb48",
           "fileSize": 1880000
@@ -422,7 +483,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-osx.zip",
           "downloadSha256": "a52484f7389668463fa4fb643eea028a1c5fbc67c7a4f776d085ba3b47748918",
           "fileSize": 1366000
@@ -432,7 +495,9 @@
           "targets": [
             "osx"
           ],
-          "format": "au",
+          "formats": [
+            "au"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-au-osx.zip",
           "downloadSha256": "206ade4b269db8eaf231934dd8f2c4b9cb57207b36f1fc92f7d37e88f76542a1",
           "fileSize": 1340000
@@ -457,7 +522,10 @@
           "targets": [
             "win64"
           ],
-          "format": "various",
+          "formats": [
+            "lv2",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-win64-plugins.zip",
           "downloadSha256": "950506b6248d21f13ec1d1b2d921cf3d7d915121d7270b5ef1ef26b8e08200c8",
           "fileSize": 2900000
@@ -467,7 +535,11 @@
           "targets": [
             "osx"
           ],
-          "format": "various",
+          "formats": [
+            "lv2",
+            "au",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-macos-universal-plugins.zip",
           "downloadSha256": "b814da84ce666a4393296fb9e4605fd8994f897ffc3760f86e623147199ba932",
           "fileSize": 15403000
@@ -477,7 +549,10 @@
           "targets": [
             "linux64"
           ],
-          "format": "various",
+          "formats": [
+            "lv2",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/midilab/jc303/releases/download/v0.9.1/jc303-0.9.1-linux64-plugins.zip",
           "downloadSha256": "a1c21ebcac5fa4a913fcf5e74b7af46f78ece4d45c0b4ac90689d17a093f1eae",
           "fileSize": 10991000
@@ -501,7 +576,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst2_2.5.4.zip",
           "downloadSha256": "4b8f845210589a1ec2876836c2c540201b66f92388b8f9f685f779ad177eca56",
           "fileSize": 4000000
@@ -511,7 +588,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst2_2.5.4.zip",
           "downloadSha256": "c45a2aa751eef75acaef52ad3ceafcf2cdaabe07f6b9329cc0dcdcacae0160dc",
           "fileSize": 4500000
@@ -521,7 +600,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst3_2.5.4.zip",
           "downloadSha256": "8281532250ef1296f4f6f6e4ad1b4cedbb8df64c7e15184640c56a6fe5ea9b55",
           "fileSize": 2300000
@@ -531,7 +612,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst3_2.5.4.zip",
           "downloadSha256": "d98a867a862078e32f7f10d6574de525cbb67fd6b629de1e1ecef2f571d47d39",
           "fileSize": 2600000
@@ -541,7 +624,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux64.zip",
           "downloadSha256": "3ab8c76e42cdfbc9301f4ab7f2b44ea69eaf81118c08127ff9048ba707df66ff",
           "fileSize": 11666000
@@ -551,7 +636,9 @@
           "targets": [
             "linux32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux32.zip",
           "downloadSha256": "f4adb9f16c7983ac8f89c913226b1c8a650948e38219b31d35c7110e74f32045",
           "fileSize": 11787000
@@ -578,7 +665,9 @@
             "win64"
           ],
           "technicalUid": "1148746297",
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/owlbass/bundles/owlbass-vst-win64.zip",
           "downloadSha256": "f12222b8a486de34bbd505162fce98eefc9860c3785e97d26ffd1f362624411f",
           "fileSize": 1708000
@@ -603,7 +692,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-win32.zip",
           "downloadSha256": "29dfca9cbdc7a176aa755966a317e17605ef96de28643d0c0927497098d2a718",
           "fileSize": 2704000
@@ -613,7 +704,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-win64.zip",
           "downloadSha256": "f16449ef5c869d992500d8e00bb767cbe53ed3f921503a2cd94aea50d4dd4462",
           "fileSize": 2981000
@@ -623,7 +716,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/rothair/bundles/rothair-vst-osx.zip",
           "downloadSha256": "5b288334cc47297a6fc6ffdd004e2ff91640560773e7166f65ff4f8ff28a3ae7",
           "fileSize": 2957000
@@ -648,7 +743,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-win.zip",
           "downloadSha256": "09007f8b2e677f504686cdaeae37db18b9efdc3c015b484471aa8bc32ce62463",
           "fileSize": 4085000
@@ -658,7 +755,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Mverb2020/bundles/Mverb2020-vst-osx.zip",
           "downloadSha256": "82b7b750e9c3d7c1ac5dc2dc737d0e2fdc9c78e1a134c1a52d7b3a23b82dd25b",
           "fileSize": 2027000
@@ -683,7 +782,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-win.zip",
           "downloadSha256": "bb1869a56bff272fa90c4d3d673db11ce520d05b85660f3951e0eb5fb931b883",
           "fileSize": 7511000
@@ -693,7 +794,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/PAPU/bundles/PAPU-vst-osx.zip",
           "downloadSha256": "1999cbb572e133ae99eb103d1c7ba69a98ccb6c6a087e1f7fd6a37200ffc747d",
           "fileSize": 2101000
@@ -718,7 +821,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-win.zip",
           "downloadSha256": "d442c23daa2f9aa7412327d4992609b9561ff22796bd498f82b4b7e638e0978b",
           "fileSize": 7513000
@@ -728,7 +833,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-osx.zip",
           "downloadSha256": "32d04a74732a2738618a4789e7381fbb0365a52b2daa202dd8db68ea101f47a0",
           "fileSize": 2098000
@@ -753,7 +860,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-win.zip",
           "downloadSha256": "88f845ad4a632bdea55a59de9181a4b4cee8dd315b093828a6ef3821f637f481",
           "fileSize": 7490000
@@ -763,7 +872,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SampleDelay/bundles/SampleDelay-vst-osx.zip",
           "downloadSha256": "ab0d490314c760623cfbece2794770dd78ebceb98f1bf862969fe6fec743c5ba",
           "fileSize": 2064000
@@ -788,7 +899,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-win.zip",
           "downloadSha256": "06f8045f3bf05ce4402fa3d3b46f6c34e317cc70e8f96cab90c7736957b8775e",
           "fileSize": 7590000
@@ -798,7 +911,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-osx.zip",
           "downloadSha256": "f6faa4fe8ffc348209d542263fa69ab2912b51160a8eeff375c6d7a11fd8d657",
           "fileSize": 5805000
@@ -823,7 +938,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-win.zip",
           "downloadSha256": "72ebf04e33137e39edaa19cccafba24f73050cf5950fd05a99962ccc919f6bc1",
           "fileSize": 7527000
@@ -833,7 +950,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SID/bundles/SID-vst-osx.zip",
           "downloadSha256": "1e8c32c358140e9aefd385c522313a882218ccd35d79424a747a2e56c888b23a",
           "fileSize": 2128000
@@ -858,7 +977,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-win.zip",
           "downloadSha256": "9c4ac6cf9aa768944fdcc7dc2899bf6fe4638e01cd8a3d16fbcc4a1c7e9f5076",
           "fileSize": 7509000
@@ -868,7 +989,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-osx.zip",
           "downloadSha256": "647808ceb98029badd8b6ed87df098b064d4d1a0754970f7fa7a23a4ea8bf04d",
           "fileSize": 2085000
@@ -893,7 +1016,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-win.zip",
           "downloadSha256": "a625631782ddd8654280e1631fd08ce8d001c71965089d2f475f4ccb3a6b744f",
           "fileSize": 7494000
@@ -903,7 +1028,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Compressor/bundles/Compressor-vst-osx.zip",
           "downloadSha256": "8c65be97e898f7541e1831202889bc29c7c7f3e0be742db8c6d1bb4f7b5965fd",
           "fileSize": 2091000
@@ -928,7 +1055,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-win.zip",
           "downloadSha256": "8372fce4e8bcde40812f8b66800c90188794d8097134d03b48ab81853d2c350a",
           "fileSize": 7491000
@@ -938,7 +1067,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Delay/bundles/Delay-vst-osx.zip",
           "downloadSha256": "9316a9d33a52bdd06fd6e339e8cfd6b6a50d16c088e5cde2a4b0ae84b63f14d0",
           "fileSize": 2072000
@@ -963,7 +1094,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-win.zip",
           "downloadSha256": "73e6cd76cf0f572b8d06d8472cb884f9e080f7e67b9d576f74540c7aeda5379b",
           "fileSize": 7509000
@@ -973,7 +1106,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/socalabs/Voc/bundles/voc-vst-osx.zip",
           "downloadSha256": "234268ada2b2ad30ce7369b2758e6e1ba14167aedce8a44f6b1a77d32e2c3d1a",
           "fileSize": 2085000
@@ -997,7 +1132,10 @@
           "targets": [
             "win64"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Win.zip",
           "downloadSha256": "cba4d56d709a3a828ae75d73c16f2e6f91516e26f2c9b3cc07e65effa4bf84b1",
           "fileSize": 102000000
@@ -1007,7 +1145,11 @@
           "targets": [
             "osx"
           ],
-          "format": "various",
+          "formats": [
+            "vst",
+            "vst3",
+            "au"
+          ],
           "downloadUrl": "https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Mac.zip",
           "downloadSha256": "c2152604d37b526afe170b2cb858903006b7ef717a9906dcfe153279e1385b04",
           "fileSize": 315000000
@@ -1017,7 +1159,10 @@
           "targets": [
             "linux64"
           ],
-          "format": "various",
+          "formats": [
+            "lv2",
+            "vst3"
+          ],
           "downloadUrl": "https://github.com/FigBug/Wavetable/releases/download/1.0.20/Wavetable_Linux.zip",
           "downloadSha256": "9286baa304c078a5adc5b61ed3b577baa7c10b8d597db6d49f696339c7d5f6a8",
           "fileSize": 158000000
@@ -1043,7 +1188,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/synister/bundles/synister-vst-win.zip",
           "downloadSha256": "3f99b18b72a3ab49c8e1d04ba8bb3229e8ed28bf03dcf31d9b0128f7ed79482f",
           "fileSize": 3500000
@@ -1068,7 +1215,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-win32.zip",
           "downloadSha256": "1f54d12f11e0dfadef3ae001dab976adcaaa4c7b79d79d4838527bb53f1f00f9",
           "fileSize": 1724000
@@ -1078,7 +1227,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-osx.zip",
           "downloadSha256": "6769d514f1b5106435bcaf7b129588af34e47cc27cb75b8e00ad5c76ebc6b5eb",
           "fileSize": 1568000
@@ -1103,7 +1254,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win32.zip",
           "downloadSha256": "3de4b52b8d23ddac41d9e66086cf4289c2e44fdef9bea8d54267dfb9a140d8e0",
           "fileSize": 278000
@@ -1113,7 +1266,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win64.zip",
           "downloadSha256": "467e5c4d5cdf816601739babd0c31f6e31cbb9c9b31f0fb68aaaeb1cde690826",
           "fileSize": 295000
@@ -1138,7 +1293,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win32.zip",
           "downloadSha256": "8b2f4bcea6bfef33a5ea5d3acab1c175be7fa764d3f651bb71c5d07a75a9452d",
           "fileSize": 494000
@@ -1148,7 +1305,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win64.zip",
           "downloadSha256": "a1e9fe799c4c71e59f2902fc35c8177dd497dde7aa67b18e0a11b85354214b5a",
           "fileSize": 511000
@@ -1173,7 +1332,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win32.zip",
           "downloadSha256": "f945804921b34de9b6668106153adce38a70b6ce0799876169f8cb4da88b0dba",
           "fileSize": 449000
@@ -1183,7 +1344,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/mikamicro/bundles/mikamicro-vst-win64.zip",
           "downloadSha256": "00edda4d5e02563acfcb1ee063aefdf57ef6d96b7dc7b945c9be50649541855c",
           "fileSize": 467000
@@ -1209,7 +1372,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win64.zip",
           "downloadSha256": "6b5363af5407d762bcddaf7956b1f0cd680523e115ee676e9fe4a8417bd14452",
           "fileSize": 2040000
@@ -1219,7 +1384,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win64.zip",
           "downloadSha256": "ab41c7bf23fbc7f91d9831da196dccd9b695d03475090d0009245b6d7af7818a",
           "fileSize": 1980000
@@ -1229,7 +1396,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win32.zip",
           "downloadSha256": "70b0f50a114406c89d1520741cc5b657db2486d35a8b11f87404e22fbd6d60ce",
           "fileSize": 1683000
@@ -1239,7 +1408,9 @@
           "targets": [
             "win32"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win32.zip",
           "downloadSha256": "1e7efc2bd8f95609ea30f973b501a7955f044e840be70fc76d15b01ef2c325a3",
           "fileSize": 3332000
@@ -1249,7 +1420,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst3",
+          "formats": [
+            "vst3"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-osx.zip",
           "downloadSha256": "688c294afeccdf74fc615824925dc2d5413c140bb4973cbc630ad2622aafc94f",
           "fileSize": 2185000
@@ -1259,7 +1432,9 @@
           "targets": [
             "osx"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-osx.zip",
           "downloadSha256": "28deb225cfbd11ccdef679bda2d9daa8d54a012633c769258f581e67f977ba0c",
           "fileSize": 2097000
@@ -1269,7 +1444,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-linux64.zip",
           "downloadSha256": "0798329475ced82ed2975f60a657065492fba32512943ce36d53034adb164cdc",
           "fileSize": 3443000
@@ -1296,7 +1473,9 @@
             "win32",
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/org.tytel.helm/bundles/helm-vst-win.zip",
           "downloadSha256": "fd8352fbeff627b1fbd3b9e729c62a02b21fb7cf373158f5442d82e1a78ecea4",
           "fileSize": 5700000
@@ -1321,7 +1500,9 @@
           "targets": [
             "win64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "technicalUid": "1935111024",
           "downloadUrl": "https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-vst-win64.zip",
           "downloadSha256": "ad461973ac73c775a21a393d36dbff1373389af8b50118aa0f76c46c780c2900",
@@ -1332,7 +1513,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "vst",
+          "formats": [
+            "vst"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-vst-linux64.zip",
           "downloadSha256": "6c0641a206f02cd9960870c9cec2a2e2e0a480ac489c927c355369a14c4cee10",
           "fileSize": 500000
@@ -1342,7 +1525,9 @@
           "targets": [
             "linux64"
           ],
-          "format": "lv2",
+          "formats": [
+            "lv2"
+          ],
           "downloadUrl": "https://central.owlplug.com/products/wolfshaper/bundles/wolf-shaper-lv2-linux64.zip",
           "downloadSha256": "ba0d2976151fd7bda38342d9dbf7499262597d978ddcd826d1e73e7791ae47e5",
           "fileSize": 500000
