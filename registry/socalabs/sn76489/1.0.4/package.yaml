@@ -21,14 +21,16 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-win.zip
   downloadSha256: 9c4ac6cf9aa768944fdcc7dc2899bf6fe4638e01cd8a3d16fbcc4a1c7e9f5076
   fileSize: 7509000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-osx.zip
   downloadSha256: 647808ceb98029badd8b6ed87df098b064d4d1a0754970f7fa7a23a4ea8bf04d
   fileSize: 2085000

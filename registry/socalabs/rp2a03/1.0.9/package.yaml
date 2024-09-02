@@ -20,14 +20,16 @@ bundles:
   targets:
   - win32
   - win64
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-win.zip
   downloadSha256: d442c23daa2f9aa7412327d4992609b9561ff22796bd498f82b4b7e638e0978b
   fileSize: 7513000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats:
+  - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-osx.zip
   downloadSha256: 32d04a74732a2738618a4789e7381fbb0365a52b2daa202dd8db68ea101f47a0
   fileSize: 2098000
