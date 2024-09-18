@@ -121,7 +121,7 @@ jobs:
           mkdir /tmp/bundles
           for bundle in ${bundles[@]}; do
             echo "Retrieving bundles ${bundle}."
-            wget  --directory-prefix /tmp/bundles ${bundle}
+            wget --user-agent github/owlplug-workflow --directory-prefix /tmp/bundles ${bundle}
           done
 
           files=(/tmp/bundles/*) 
