@@ -14,21 +14,24 @@ bundles:
 - name: Win32 VST
   targets:
   - win32
-  format: vst
+  formats: 
+  - vst
   downloadUrl: https://central.owlplug.com/products/dragonflyreverb/bundles/dragonflyreverb-vst-win32.zip
   downloadSha256: f4b95a805dd72963574ceea96652f1562e48e412b128b8a2321aa1bd393a0cc1
   fileSize: 4795000
 - name: Win64 VST
   targets:
   - win64
-  format: vst
+  formats: 
+  - vst
   downloadUrl: https://central.owlplug.com/products/dragonflyreverb/bundles/dragonflyreverb-vst-win64.zip
   downloadSha256: d6db47244e97424702b317638ab65ed5a1b224db8cdf8ee0bab6b2bc03495a71
   fileSize: 4832000
 - name: OSX VST
   targets:
   - osx
-  format: vst
+  formats: 
+  - vst
   downloadUrl: https://central.owlplug.com/products/dragonflyreverb/bundles/dragonflyreverb-vst-osx.zip
   downloadSha256: 82244592aa9301fbc855f48d26aef7fcd29a48abc11077bdcee974a36914371f
   fileSize: 3080000
