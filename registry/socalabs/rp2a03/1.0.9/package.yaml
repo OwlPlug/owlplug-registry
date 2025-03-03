@@ -18,8 +18,8 @@ tags:
 bundles:
 - name: Win32/64 VST
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-win.zip
@@ -27,7 +27,7 @@ bundles:
   fileSize: 7513000
 - name: OSX VST
   targets:
-  - osx
+  - mac
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/RP2A03/bundles/RP2A03-vst-osx.zip

@@ -1,5 +1,5 @@
 # Registry Specification
-**Version 1.2.0**
+**Version 1.3.0**
 
 ## Introduction
 
@@ -99,12 +99,11 @@ Ambient,Amp,Analog,Bass,Brass,Compressor,Delay,Distortion,Drum,Equalizer,Filter,
 ### Target
 
 A Target is just a simple string describing main target environments of a plugin. You must use following identifiers:
-* Windows 32 bit: `win32`
-* Windows 64 bit: `win64`
-* OSX: `osx`
-* Linux: `linux`
+* Windows: `win-x32`, `win-x64`
+* OSX: `mac`
+* Linux: `linux-x32`, `linux-x64`, `linux-arm32`, `linux-arm64`
 
-For example, in case of a win 64 bit release, you should specify `win64`. If a bundle contains both x64 and x86 windows distributions, you can have an array of target like this `["win64", "win32"]`. This is **not** a compatibility flag so if you are distributing Win 32 release only, you should **not** specify `win64`.
+For example, in case of a Win64 bit release, you should specify `win-x64`. If a bundle contains both x64 and x86 windows distributions, you can have an array of target like this `["win-x64", "win-x32"]`. This is **not** a compatibility flag so if you are distributing a Win32 release only, you must **not** specify `win-x64`.
 
 ### Bundle file structure
 

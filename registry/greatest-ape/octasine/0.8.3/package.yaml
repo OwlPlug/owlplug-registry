@@ -11,7 +11,7 @@ tags:
 bundles:
 - name: Release Win64
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   - clap
@@ -20,7 +20,7 @@ bundles:
   fileSize: 2730000
 - name: Release macOS
   targets:
-  - osx
+  - mac
   formats:
   - vst
   - clap
@@ -29,7 +29,7 @@ bundles:
   fileSize: 6200000
 - name: Release Linux64
   targets:
-  - linux64
+  - linux-x64
   formats:
   - vst
   - clap

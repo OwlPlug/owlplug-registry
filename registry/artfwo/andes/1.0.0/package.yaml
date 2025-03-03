@@ -13,7 +13,7 @@ tags:
 bundles:
 - name: Win32 VST
   targets:
-  - win32
+  - win-x32
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-win32.zip
@@ -21,7 +21,7 @@ bundles:
   fileSize: 1410000
 - name: Win64 VST
   targets:
-  - win64
+  - win-x64
   technicalUid: '1097753715'
   formats: 
   - vst
@@ -30,7 +30,7 @@ bundles:
   fileSize: 1724000
 - name: MacOs VST
   targets:
-  - osx
+  - mac
   formats: 
   - vst
   downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-osx.zip
@@ -38,7 +38,7 @@ bundles:
   fileSize: 1568000
 - name: Linux64 VST
   targets:
-  - linux64
+  - linux-x64
   formats: 
   - vst
   downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-linux64.zip
@@ -46,7 +46,7 @@ bundles:
   fileSize: 3185000
 - name: Linux32 VST
   targets:
-  - linux32
+  - linux-x32
   formats: 
   - vst
   downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-linux32.zip

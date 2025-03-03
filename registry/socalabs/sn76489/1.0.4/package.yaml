@@ -19,8 +19,8 @@ tags:
 bundles:
 - name: Win32/64 VST
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-win.zip
@@ -28,7 +28,7 @@ bundles:
   fileSize: 7509000
 - name: OSX VST
   targets:
-  - osx
+  - mac
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SN76489/bundles/SN76489-vst-osx.zip

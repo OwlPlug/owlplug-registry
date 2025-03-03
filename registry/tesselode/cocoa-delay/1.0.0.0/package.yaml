@@ -18,7 +18,7 @@ tags:
 bundles:
 - name: Win32 VST
   targets:
-  - win32
+  - win-x32
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win32.zip
@@ -26,7 +26,7 @@ bundles:
   fileSize: 278000
 - name: Win64 VST
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win64.zip
