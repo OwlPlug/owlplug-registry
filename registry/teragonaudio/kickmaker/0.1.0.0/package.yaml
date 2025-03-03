@@ -14,7 +14,7 @@ tags:
 bundles:
 - name: Win32 VST
   targets:
-  - win32
+  - win-x32
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-win32.zip
@@ -22,7 +22,7 @@ bundles:
   fileSize: 1724000
 - name: MacOs VST
   targets:
-  - osx
+  - mac
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-osx.zip

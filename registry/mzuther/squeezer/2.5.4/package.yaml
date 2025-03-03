@@ -14,7 +14,7 @@ tags:
 bundles:
 - name: Win32 VST
   targets:
-  - win32
+  - win-x32
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst2_2.5.4.zip
@@ -22,7 +22,7 @@ bundles:
   fileSize: 4000000
 - name: Win64 VST
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst2_2.5.4.zip
@@ -30,7 +30,7 @@ bundles:
   fileSize: 4500000
 - name: Win32 VST3
   targets:
-  - win32
+  - win-x32
   formats:
   - vst3
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-w32-vst3_2.5.4.zip
@@ -38,7 +38,7 @@ bundles:
   fileSize: 2300000
 - name: Win64 VST3
   targets:
-  - win64
+  - win-x64
   formats:
   - vst3
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-w64-vst3_2.5.4.zip
@@ -46,7 +46,7 @@ bundles:
   fileSize: 2600000
 - name: Linux64 VST
   targets:
-  - linux64
+  - linux-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux64.zip
@@ -54,7 +54,7 @@ bundles:
   fileSize: 11666000
 - name: Linux32 VST
   targets:
-  - linux32
+  - linux-x32
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/squeezer/bundles/squeezer-vst-linux32.zip

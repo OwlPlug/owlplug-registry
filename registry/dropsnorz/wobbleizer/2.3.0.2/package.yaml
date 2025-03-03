@@ -14,8 +14,8 @@ tags:
 bundles:
 - name: Wobx Win32/64
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip
@@ -23,7 +23,7 @@ bundles:
   fileSize: 2858000
 - name: Wobx Osx
   targets:
-  - osx
+  - mac
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-osx.zip
