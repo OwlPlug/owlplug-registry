@@ -14,7 +14,7 @@ tags:
 bundles:
 - name: Win64 VST3
   targets:
-  - win64
+  - win-x64
   formats:
   - vst3
   downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-win64.zip
@@ -22,7 +22,7 @@ bundles:
   fileSize: 1880000
 - name: OSX VST3
   targets:
-  - osx
+  - mac
   formats:
   - vst3
   downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-osx.zip
@@ -30,7 +30,7 @@ bundles:
   fileSize: 1366000
 - name: OSX AU
   targets:
-  - osx
+  - mac
   formats:
   - au
   downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-au-osx.zip

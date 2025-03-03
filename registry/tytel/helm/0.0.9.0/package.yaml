@@ -13,8 +13,8 @@ tags:
 bundles:
 - name: Windows
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/org.tytel.helm/bundles/helm-vst-win.zip

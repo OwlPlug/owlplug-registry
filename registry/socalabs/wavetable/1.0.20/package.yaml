@@ -11,7 +11,7 @@ tags:
 bundles:
 - name: Win64 Bundle
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   - vst3
@@ -20,7 +20,7 @@ bundles:
   fileSize: 102000000
 - name: OSX Bundle
   targets:
-  - osx
+  - mac
   formats:
   - vst
   - vst3
@@ -30,7 +30,7 @@ bundles:
   fileSize: 315000000
 - name: Linux64 Bundle
   targets:
-  - linux64
+  - linux-x64
   formats:
   - lv2
   - vst3
