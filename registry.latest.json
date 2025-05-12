@@ -22,7 +22,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -34,7 +34,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "technicalUid": "1097753715",
               "formats": [
@@ -47,7 +47,7 @@
             {
               "name": "MacOs VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -59,7 +59,7 @@
             {
               "name": "Linux64 VST",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst"
@@ -71,7 +71,7 @@
             {
               "name": "Linux32 VST",
               "targets": [
-                "linux32"
+                "linux-x32"
               ],
               "formats": [
                 "vst"
@@ -103,7 +103,7 @@
             {
               "name": "Windows Release",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst",
@@ -116,7 +116,7 @@
             {
               "name": "macOS Release",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst",
@@ -149,7 +149,7 @@
             {
               "name": "Linux Release",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst",
@@ -183,7 +183,7 @@
             {
               "name": "Win32 Release",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst",
@@ -196,7 +196,7 @@
             {
               "name": "Win64 Release",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst",
@@ -209,7 +209,7 @@
             {
               "name": "Linux32 Release",
               "targets": [
-                "linux32"
+                "linux-x32"
               ],
               "formats": [
                 "vst",
@@ -222,7 +222,7 @@
             {
               "name": "Linux64 Release",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst",
@@ -235,7 +235,7 @@
             {
               "name": "macOS Release",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst",
@@ -268,8 +268,8 @@
             {
               "name": "Dexed Windows",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -281,7 +281,7 @@
             {
               "name": "Dexed Linux 64",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst3"
@@ -315,7 +315,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -327,7 +327,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -360,7 +360,7 @@
             {
               "name": "Release Linux64",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "lv2"
@@ -395,8 +395,8 @@
             {
               "name": "Wobx Win32/64",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -408,7 +408,7 @@
             {
               "name": "Wobx Osx",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -440,7 +440,7 @@
             {
               "name": "Release Win64",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst",
@@ -453,7 +453,7 @@
             {
               "name": "Release macOS",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst",
@@ -466,7 +466,7 @@
             {
               "name": "Release Linux64",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst",
@@ -501,7 +501,7 @@
             {
               "name": "Release Win64",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst3"
@@ -533,7 +533,7 @@
             {
               "name": "Win64 VST3",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst3"
@@ -545,7 +545,7 @@
             {
               "name": "OSX VST3",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst3"
@@ -557,7 +557,7 @@
             {
               "name": "OSX AU",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "au"
@@ -590,7 +590,7 @@
             {
               "name": "Win32 Plugins",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "lv2",
@@ -603,7 +603,7 @@
             {
               "name": "Win64 Plugins",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "lv2",
@@ -616,7 +616,7 @@
             {
               "name": "macOS Plugins",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "unknown"
@@ -628,8 +628,8 @@
             {
               "name": "Linux x86x64 Plugins",
               "targets": [
-                "linux32",
-                "linux64"
+                "linux-x32",
+                "linux-x64"
               ],
               "formats": [
                 "lv2",
@@ -663,7 +663,7 @@
             {
               "name": "Release Win64",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "lv2",
@@ -676,7 +676,7 @@
             {
               "name": "Release macOS",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "lv2",
@@ -690,7 +690,7 @@
             {
               "name": "Release Linux64",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "lv2",
@@ -723,7 +723,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -735,7 +735,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -747,7 +747,7 @@
             {
               "name": "Win32 VST3",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst3"
@@ -759,7 +759,7 @@
             {
               "name": "Win64 VST3",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst3"
@@ -771,7 +771,7 @@
             {
               "name": "Linux64 VST",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst"
@@ -783,7 +783,7 @@
             {
               "name": "Linux32 VST",
               "targets": [
-                "linux32"
+                "linux-x32"
               ],
               "formats": [
                 "vst"
@@ -817,7 +817,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "technicalUid": "1148746297",
               "formats": [
@@ -851,7 +851,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -863,7 +863,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -875,7 +875,7 @@
             {
               "name": "MacOs VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -907,8 +907,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -920,7 +920,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -952,8 +952,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -965,7 +965,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -997,8 +997,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1010,7 +1010,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1042,8 +1042,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1055,7 +1055,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1087,8 +1087,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1100,7 +1100,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1132,8 +1132,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1145,7 +1145,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1177,8 +1177,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1190,7 +1190,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1222,8 +1222,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1235,7 +1235,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1267,8 +1267,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1280,7 +1280,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1312,8 +1312,8 @@
             {
               "name": "Win32/64 VST",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1325,7 +1325,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1357,7 +1357,7 @@
             {
               "name": "Win64 Bundle",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst",
@@ -1370,7 +1370,7 @@
             {
               "name": "OSX Bundle",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst",
@@ -1384,7 +1384,7 @@
             {
               "name": "Linux64 Bundle",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "lv2",
@@ -1418,8 +1418,8 @@
             {
               "name": "Windows",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1452,7 +1452,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -1464,7 +1464,7 @@
             {
               "name": "MacOs VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1497,7 +1497,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -1509,7 +1509,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1542,7 +1542,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -1554,7 +1554,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1587,7 +1587,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -1599,7 +1599,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1633,7 +1633,7 @@
             {
               "name": "Win64 VST3",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst3"
@@ -1645,7 +1645,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1657,7 +1657,7 @@
             {
               "name": "Win32 VST3",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst3"
@@ -1669,7 +1669,7 @@
             {
               "name": "Win32 VST",
               "targets": [
-                "win32"
+                "win-x32"
               ],
               "formats": [
                 "vst"
@@ -1681,7 +1681,7 @@
             {
               "name": "OSX VST3",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst3"
@@ -1693,7 +1693,7 @@
             {
               "name": "OSX VST",
               "targets": [
-                "osx"
+                "mac"
               ],
               "formats": [
                 "vst"
@@ -1705,7 +1705,7 @@
             {
               "name": "Linux64 VST",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst"
@@ -1739,8 +1739,8 @@
             {
               "name": "Windows",
               "targets": [
-                "win32",
-                "win64"
+                "win-x32",
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1773,7 +1773,7 @@
             {
               "name": "Win64 VST",
               "targets": [
-                "win64"
+                "win-x64"
               ],
               "formats": [
                 "vst"
@@ -1786,7 +1786,7 @@
             {
               "name": "Linux64 VST",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "vst"
@@ -1798,7 +1798,7 @@
             {
               "name": "Linux64 LV2",
               "targets": [
-                "linux64"
+                "linux-x64"
               ],
               "formats": [
                 "lv2"
