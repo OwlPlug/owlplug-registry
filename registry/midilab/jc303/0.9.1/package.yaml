@@ -12,7 +12,7 @@ tags:
 bundles:
 - name: Release Win64
   targets:
-  - win64
+  - win-x64
   formats:
   - lv2
   - vst3
@@ -21,7 +21,7 @@ bundles:
   fileSize: 2900000
 - name: Release macOS
   targets:
-  - osx
+  - mac
   formats:
   - lv2
   - au
@@ -31,7 +31,7 @@ bundles:
   fileSize: 15403000
 - name: Release Linux64
   targets:
-  - linux64
+  - linux-x64
   formats:
   - lv2
   - vst3

@@ -20,8 +20,8 @@ tags:
 bundles:
 - name: Win32/64 VST
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-win.zip
@@ -29,7 +29,7 @@ bundles:
   fileSize: 7590000
 - name: OSX VST
   targets:
-  - osx
+  - mac
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/socalabs/SFX8/bundles/SFX8-vst-osx.zip

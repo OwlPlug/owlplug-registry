@@ -11,8 +11,8 @@ tags:
 bundles:
 - name: Dexed Windows
   targets:
-  - win32
-  - win64
+  - win-x32
+  - win-x64
   formats:
   - vst
   downloadUrl: https://central.owlplug.com/products/dexed/bundles/dexed-vst-win.zip
@@ -20,7 +20,7 @@ bundles:
   fileSize: 3900000
 - name: Dexed Linux 64
   targets:
-  - linux64
+  - linux-x64
   formats:
   - vst3
   downloadUrl: https://central.owlplug.com/products/dexed/bundles/dexed-vst3-linux64.zip

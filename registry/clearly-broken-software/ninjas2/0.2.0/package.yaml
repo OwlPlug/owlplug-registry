@@ -16,7 +16,7 @@ tags:
 bundles:
 - name: Win32 Release
   targets:
-  - win32
+  - win-x32
   formats:
   - vst
   - lv2
@@ -25,7 +25,7 @@ bundles:
   fileSize: 5999647
 - name: Win64 Release
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   - lv2
@@ -34,7 +34,7 @@ bundles:
   fileSize: 5988233
 - name: Linux32 Release
   targets:
-  - linux32
+  - linux-x32
   formats:
   - vst
   - lv2
@@ -43,7 +43,7 @@ bundles:
   fileSize: 1433217
 - name: Linux64 Release
   targets:
-  - linux64
+  - linux-x64
   formats:
   - vst
   - lv2
@@ -52,7 +52,7 @@ bundles:
   fileSize: 1437316
 - name: macOS Release
   targets:
-  - osx
+  - mac
   formats:
   - vst
   - lv2

@@ -18,9 +18,9 @@ Audio plugins delivered by the owlplug-registry are described using the YAML for
 
 For example, [dropsnorz/wobbleizer](https://github.com/OwlPlug/owlplug-registry/blob/master/registry/dropsnorz/wobbleizer/) is a **Package**,  [dropsnorz/wobbleizer/v2.3.0.2](https://github.com/OwlPlug/owlplug-registry/blob/master/registry/dropsnorz/wobbleizer/2.3.0.2/package.yaml) is a **PackageVersion**.
 This package version contains 3 different **Bundles**:
-* A `vst-win64` bundle containing the plugin as `VST` and targeting `win64` arch
-* A `vst-win32` bundle containing the plugin as `VST` and targeting `win32` arch
-* An `au-osx` bundle containing the plugins as `AU` and targeting `osx` arch
+* A `vst-win-x64` bundle containing the plugin as `VST` and targeting `win-x64` arch
+* A `vst-win-x32` bundle containing the plugin as `VST` and targeting `win-x32` arch
+* An `au-mac` bundle containing the plugins as `AU` and targeting `mac` arch
 
 
 ## Choose a `groupId` and a `packageId` for your package
@@ -45,7 +45,7 @@ Package version manifest must be stored on the following path from the repositor
 
 This section describes rules that must be followed when creating or updating properties defined in `package.yaml` file on the registry.
 
-All properties are described in details in the [Registry Specification]().
+All properties are described in details in the [Registry Specification](./Registry-specification.md).
 
 **package.name**
 * 30 characters maximum

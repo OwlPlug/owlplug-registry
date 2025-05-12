@@ -13,7 +13,7 @@ tags:
 bundles:
 - name: Win32 Plugins
   targets:
-  - win32
+  - win-x32
   formats:
   - lv2
   - vst3
@@ -22,7 +22,7 @@ bundles:
   fileSize: 15000000
 - name: Win64 Plugins
   targets:
-  - win64
+  - win-x64
   formats:
   - lv2
   - vst3
@@ -31,7 +31,7 @@ bundles:
   fileSize: 17000000
 - name: macOS Plugins
   targets:
-  - osx
+  - mac
   formats:
   - unknown
   downloadUrl: https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.7/dragonfly-reverb-mac-universal-3.2.7.zip
@@ -39,8 +39,8 @@ bundles:
   fileSize: 17600000
 - name: Linux x86x64 Plugins
   targets:
-  - linux32
-  - linux64
+  - linux-x32
+  - linux-x64
   formats:
   - lv2
   - vst3

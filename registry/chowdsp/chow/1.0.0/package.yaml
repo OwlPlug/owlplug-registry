@@ -18,7 +18,7 @@ tags:
 bundles:
 - name: Windows Release
   targets:
-  - win64
+  - win-x64
   formats:
   - vst
   - vst3
@@ -27,7 +27,7 @@ bundles:
   fileSize: 5317000
 - name: macOS Release
   targets:
-  - osx
+  - mac
   formats: 
   - vst
   - au
