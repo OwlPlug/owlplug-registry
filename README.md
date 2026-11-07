@@ -7,6 +7,9 @@
 
 This repository contains package manifest files for the **OwlPlug** main registry. If you are an audio plugin developer, feel free to add your audio plugin releases to make them available on the **OwlPlug** registry.
 
+> **Deprecated**
+> Prefer the [Open Audio Stack Registry](https://github.com/open-audio-stack/open-audio-stack-registry), the successor to this registry.
+> OwlPlug is compatible with Open Audio Stack.
 
 ## Submit a plugin
 

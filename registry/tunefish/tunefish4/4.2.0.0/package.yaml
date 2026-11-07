@@ -2,7 +2,7 @@
 name: Tunefish4
 creator: Tunefish Synth
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/tunefish4/tunefish4.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/tunefish4/tunefish4.png
 description: Tiny virtual analog synthesizer
 pageUrl: https://www.tunefish-synth.com/
 donateUrl: https://www.tunefish-synth.com/
@@ -16,54 +16,54 @@ bundles:
   - win-x64
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win64.zip
-  downloadSha256: 6b5363af5407d762bcddaf7956b1f0cd680523e115ee676e9fe4a8417bd14452
-  fileSize: 2040000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst3-win64.tar.xz
+  downloadSha256: db00b3ded3c73b11aa72653387886707eb96a593a73819f356791dd9de52105b
+  fileSize: 1595152
 - name: Win64 VST
   targets:
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win64.zip
-  downloadSha256: ab41c7bf23fbc7f91d9831da196dccd9b695d03475090d0009245b6d7af7818a
-  fileSize: 1980000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst-win64.tar.xz
+  downloadSha256: e40ca635f4c4edcb985f6c378fd938ce2a549d42e432b773d6c56db0ea54b908
+  fileSize: 1542516
 - name: Win32 VST3
   targets:
   - win-x32
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-win32.zip
-  downloadSha256: 70b0f50a114406c89d1520741cc5b657db2486d35a8b11f87404e22fbd6d60ce
-  fileSize: 1683000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst3-win32.tar.xz
+  downloadSha256: 18ef384205aa70fbe9ca17c261d8ec875c301f16ca6bca3f0c8bbb9553432aae
+  fileSize: 1331532
 - name: Win32 VST
   targets:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-win32.zip
-  downloadSha256: 1e7efc2bd8f95609ea30f973b501a7955f044e840be70fc76d15b01ef2c325a3
-  fileSize: 3332000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst-win32.tar.xz
+  downloadSha256: 844f4ddc2c353a4fa8f0dbec2a23760022d78018e2729df2ae1089dcabd48d50
+  fileSize: 1285888
 - name: OSX VST3
   targets:
   - mac
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst3-osx.zip
-  downloadSha256: 688c294afeccdf74fc615824925dc2d5413c140bb4973cbc630ad2622aafc94f
-  fileSize: 2185000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst3-osx.tar.xz
+  downloadSha256: efa35e6471889f503b375e9f3af2e5ccf697f9b37175fab261c76461896a9e10
+  fileSize: 1582940
 - name: OSX VST
   targets:
   - mac
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-osx.zip
-  downloadSha256: 28deb225cfbd11ccdef679bda2d9daa8d54a012633c769258f581e67f977ba0c
-  fileSize: 2097000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst-osx.tar.xz
+  downloadSha256: 45625ec174aef4ad719ca8df9713960fac0400be0e896d2abcbf070051875d32
+  fileSize: 1519512
 - name: Linux64 VST
   targets:
   - linux-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/tunefish4/bundles/tunefish4-vst-linux64.zip
-  downloadSha256: 0798329475ced82ed2975f60a657065492fba32512943ce36d53034adb164cdc
-  fileSize: 3443000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/tunefish4/bundles/tunefish4-vst-linux64.tar.xz
+  downloadSha256: aae7cc8a7c0d951b8b30888120995d74e4068d393b440180c181952ee693b56a
+  fileSize: 2510192

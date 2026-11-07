@@ -2,7 +2,7 @@
 name: Ninjas2
 creator: clearly-broken-software
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/clearly-broken-software/ninjas2/0.2.0/screenshot.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/clearly-broken-software/ninjas2/0.2.0/screenshot.png
 description: |-
  Rewrite of Ninjas, a sample slicer audio plugin. This plugin uses the DPF for the creation of audio plugins in lv2 and vst2 formats. A stand alone jack app is also compiled.
  Easy to use sample slicer, quick slicing of sample and auto-mapping slices to midi note numbers.

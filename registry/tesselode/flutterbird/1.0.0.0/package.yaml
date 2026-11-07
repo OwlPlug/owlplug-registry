@@ -2,7 +2,7 @@
 name: Flutterbird
 creator: tesselode
 license: mit
-screenshotUrl: https://central.owlplug.com/products/flutterbird/flutterbird.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/flutterbird/flutterbird.png
 description: Flutterbird is a free, open-source effect plugin for adding pitch and
   volume fluctuation to incoming audio. It can be used for traditional wow/flutter
   effects as well as more chaotic, extreme modulation. Flutterbird has four separate
@@ -18,14 +18,14 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win32.zip
-  downloadSha256: 8b2f4bcea6bfef33a5ea5d3acab1c175be7fa764d3f651bb71c5d07a75a9452d
-  fileSize: 494000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/flutterbird/bundles/flutterbird-vst-win32.tar.xz
+  downloadSha256: 9a737bc87c6c1f757d9459933d690bd712f603d6a7dd1b81cac78f7565e00119
+  fileSize: 465316
 - name: Win64 VST
   targets:
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/flutterbird/bundles/flutterbird-vst-win64.zip
-  downloadSha256: a1e9fe799c4c71e59f2902fc35c8177dd497dde7aa67b18e0a11b85354214b5a
-  fileSize: 511000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/flutterbird/bundles/flutterbird-vst-win64.tar.xz
+  downloadSha256: 5a9a62878bd6c1c0f4f7c6d8adc4a08b458adc891406738a1bc143aba97836b3
+  fileSize: 476868

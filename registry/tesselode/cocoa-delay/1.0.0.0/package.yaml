@@ -2,7 +2,7 @@
 name: Cocoa Delay
 creator: tesselode
 license: mit
-screenshotUrl: https://central.owlplug.com/products/cocoadelay/cocoadelay.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/cocoadelay/cocoadelay.png
 description: |- 
   Cocoa Delay is a free, open-source delay plugin in VST format. It focuses on clean design, easy operation, and a warm, lively sound.
 
@@ -21,14 +21,14 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win32.zip
-  downloadSha256: 3de4b52b8d23ddac41d9e66086cf4289c2e44fdef9bea8d54267dfb9a140d8e0
-  fileSize: 278000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/cocoadelay/bundles/cocoadelay-vst-win32.tar.xz
+  downloadSha256: da513531baf49a0e70bea11aa3387189219db836c489b3fa8e902f0c89c3c635
+  fileSize: 249200
 - name: Win64 VST
   targets:
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/cocoadelay/bundles/cocoadelay-vst-win64.zip
-  downloadSha256: 467e5c4d5cdf816601739babd0c31f6e31cbb9c9b31f0fb68aaaeb1cde690826
-  fileSize: 295000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/cocoadelay/bundles/cocoadelay-vst-win64.tar.xz
+  downloadSha256: 3be82d450193b96eaefcda005961f76ce17f477707cb028eade2f4e3a2b8fcc2
+  fileSize: 261384

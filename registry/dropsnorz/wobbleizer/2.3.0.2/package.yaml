@@ -2,7 +2,7 @@
 name: Wobbleizer
 creator: Dropsnorz
 license: mit
-screenshotUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/wobbleizer.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/com.dropsnorz.wobbleizer/wobbleizer.png
 description: A frequency filter with LFO modulation
 pageUrl: https://github.com/dropsnorz/wobbleizer
 technicalUid: '2003788408'
@@ -12,20 +12,19 @@ tags:
 - Filter
 - LFO
 bundles:
-- name: Wobx Win32/64
+- name: Wobx Win64
   targets:
-  - win-x32
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-win32win64.zip
-  downloadSha256: 35f9446c4494e055938ebe46df60af5162949936416816582cc738a809ab5ccd
-  fileSize: 2858000
+  downloadUrl: https://github.com/DropSnorz/wobbleizer/releases/download/v2.3.0/wobbleizer-vst-win64.zip
+  downloadSha256: 988803f6c7810bcef13289cc8aa32437ebb343134e051123b04e1b8815ec99c3
+  fileSize: 1466718
 - name: Wobx Osx
   targets:
   - mac
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/com.dropsnorz.wobbleizer/bundles/wobbleizer-vst-osx.zip
-  downloadSha256: 17b98b8eda7271f16ec82571bed34ab45192621c98fcada217cde7c54bddb793
-  fileSize: 3169000
+  downloadUrl: https://github.com/DropSnorz/wobbleizer/releases/download/v2.3.0/wobbleizer-vst-osx64.zip
+  downloadSha256: 55827a53f1862f19d7017e5db4d31fd82732fb3bce0d704662143bde75cb35c2
+  fileSize: 1595902

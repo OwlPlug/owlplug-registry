@@ -2,7 +2,7 @@
 name: BlackBird
 creator: Dmitry Khrykin
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/khrykin/blackbird/0.1.0/blackbird.png
 description: |- 
   Analog-inspired software synth with its own voice.
 
@@ -23,6 +23,6 @@ bundles:
   - win-x64
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/khrykin/blackbird/0.1.0/blackbird-vst3-win64.zip
-  downloadSha256: 04402c1cdcba81d82094b9860d727fd60606532d37286a0445923b0a26729c4f
-  fileSize: 1730000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/khrykin/blackbird/0.1.0/blackbird-vst3-win64.tar.xz
+  downloadSha256: 8ab969c7b30a548c7ef9f01517ae276e376e5a301950e9302a4c87e562e014e2
+  fileSize: 1433468
