@@ -2,7 +2,7 @@
 name: Roth-AIR
 creator: Daniel Rothmann
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/rothair/rothair.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/rothair/rothair.png
 description: |- 
   Roth-AIR is a mixing tool for easily adding airy, crispy presence to your audio. 
   
@@ -26,22 +26,22 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-win32.zip
-  downloadSha256: 29dfca9cbdc7a176aa755966a317e17605ef96de28643d0c0927497098d2a718
-  fileSize: 2704000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/rothair/bundles/rothair-vst-win32.tar.xz
+  downloadSha256: 4568072e6995f0570f3751f0d72ba6ce396380cad9fa3626ce9e7dc2acc37cdd
+  fileSize: 2387768
 - name: Win64 VST
   targets:
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-win64.zip
-  downloadSha256: f16449ef5c869d992500d8e00bb767cbe53ed3f921503a2cd94aea50d4dd4462
-  fileSize: 2981000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/rothair/bundles/rothair-vst-win64.tar.xz
+  downloadSha256: 8f29c11eb041cb713937d06132e9a513b225f0550bf0963a253c2cd0cfd3262b
+  fileSize: 2582472
 - name: MacOs VST
   targets:
   - mac
   formats: 
   - vst
-  downloadUrl: https://central.owlplug.com/products/rothair/bundles/rothair-vst-osx.zip
-  downloadSha256: 5b288334cc47297a6fc6ffdd004e2ff91640560773e7166f65ff4f8ff28a3ae7
-  fileSize: 2957000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/rothair/bundles/rothair-vst-osx.tar.xz
+  downloadSha256: 6ddfea50b7a0a3ffc288c7ec9e1016456e08c9b3c5002ed6d76bf2da3fa9b3b3
+  fileSize: 2428328

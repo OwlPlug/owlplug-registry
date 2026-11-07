@@ -2,7 +2,7 @@
 name: Andes
 creator: Artem Popov
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/andes/andes.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/andes/andes.png
 description: Andes is a software synthesiser plugin in early stages of development.
   The core of Andes is an original oscillator which uses a pseudo-3D version of Perlin
   noise to produce distinctively digital sound.
@@ -16,39 +16,39 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-win32.zip
-  downloadSha256: e891942d0518020a603732fce25706ccc8272f549939bea990f929bb90ab1928
-  fileSize: 1410000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/andes/bundles/andes-vst-win32.tar.xz
+  downloadSha256: 756ed0b11c97dfbe8ffb55d6aea291264d8ff87689fea21836491ede93345ae9
+  fileSize: 1091808
 - name: Win64 VST
   targets:
   - win-x64
   technicalUid: '1097753715'
   formats: 
   - vst
-  downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-win64.zip
-  downloadSha256: 3af35f02121a3c7ad6375bfe9c29a382f5882fa443bbf4c2df347a255c0edf2a
-  fileSize: 1724000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/andes/bundles/andes-vst-win64.tar.xz
+  downloadSha256: ef00d800439d0a8438ccca620794b39d660186668dbf1452a3f6cae53bb8260f
+  fileSize: 1314624
 - name: MacOs VST
   targets:
   - mac
   formats: 
   - vst
-  downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-osx.zip
-  downloadSha256: f83196ca17aa2ef91c739c17ef0af3db9b7520d2b5e534b295d8af121bc95df9
-  fileSize: 1568000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/andes/bundles/andes-vst-osx.tar.xz
+  downloadSha256: afe1d9ccda14ccf33f4360bbae5e60b1e2e363e3466e8fca8eee5469318c0f84
+  fileSize: 1184664
 - name: Linux64 VST
   targets:
   - linux-x64
   formats: 
   - vst
-  downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-linux64.zip
-  downloadSha256: bc91ea7055fa13df3065aeff89faf5d2ca0201f322a8f5fc3dd030ba1f6b65c6
-  fileSize: 3185000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/andes/bundles/andes-vst-linux64.tar.xz
+  downloadSha256: 31bf541066c0843801a52451d59a8fb8ecd628f7964cd875c9abcbce31e0c64b
+  fileSize: 2324108
 - name: Linux32 VST
   targets:
   - linux-x32
   formats: 
   - vst
-  downloadUrl: https://central.owlplug.com/products/andes/bundles/andes-vst-linux32.zip
-  downloadSha256: 66d52c05e72531a9b2cdca9b06c5f8a26eb0562dd1fc842cbb9dbbaf2e56385a
-  fileSize: 3185000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/andes/bundles/andes-vst-linux32.tar.xz
+  downloadSha256: 0e13a737304ad5b41915d8381bc3eb64537a662a3471246319ebb4c7a6a52157
+  fileSize: 2365160

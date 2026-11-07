@@ -2,7 +2,7 @@
 name: OwlBass
 creator: PentagramPro
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/owlbass/owlbass.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/owlbass/owlbass.png
 description: OwlBass is an additive single voice bass synthesizer
 pageUrl: https://github.com/PentagramPro/OwlBass
 type: instrument
@@ -17,6 +17,6 @@ bundles:
   technicalUid: '1148746297'
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/owlbass/bundles/owlbass-vst-win64.zip
-  downloadSha256: f12222b8a486de34bbd505162fce98eefc9860c3785e97d26ffd1f362624411f
-  fileSize: 1708000
+  downloadUrl: https://github.com/PentagramPro/OwlBass/releases/download/v1.0/owlbass.zip
+  downloadSha256: 41843439727f9eb1f8e30ebbd367da0a1aba5194e9d290d22192285accefa26a
+  fileSize: 1671878

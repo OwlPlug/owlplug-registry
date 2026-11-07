@@ -2,7 +2,7 @@
 name: OB-Xd
 creator: discoDSP
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/obxd/obxd.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/obxd/obxd.png
 description: |-
   Emulation of famous OB-X, OB-Xa and OB-8 synths
 
@@ -20,14 +20,14 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win32.zip
-  downloadSha256: 51a161d7996d70ca179f80855d755aad95b3968ab7ee3a9476f605664f46856e
-  fileSize: 1965000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/obxd/bundles/obxd-vst-win32.tar.xz
+  downloadSha256: 4089ad7687fb39a766615ce461bfcda39ac54b567aab51ac9256a7fe1c595899
+  fileSize: 1627144
 - name: Win64 VST
   targets:
   - win-x64
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/obxd/bundles/obxd-vst-win64.zip
-  downloadSha256: 64d9c4ce2304fc0abf7bc3cce2812718522ef68d664c7c0bb18ad46e434aae6d
-  fileSize: 2229000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/obxd/bundles/obxd-vst-win64.tar.xz
+  downloadSha256: 6c6f1537ffd7f7b3feeb601e192f2f50908a4ecfe470da5e46530959bd9fd93d
+  fileSize: 1818900

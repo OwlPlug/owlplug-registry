@@ -2,7 +2,7 @@
 name: KickMaker
 creator: Teragon Audio
 license: bsd
-screenshotUrl: https://central.owlplug.com/products/kickmaker/kickmaker.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/kickmaker/kickmaker.png
 description: KickMaker is a synthesizer designed specifically to create good kick
   drum sounds. It uses four independent oscillators and a wide range of effects, allowing
   one to create perfectly customized beats.
@@ -17,14 +17,14 @@ bundles:
   - win-x32
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-win32.zip
-  downloadSha256: 1f54d12f11e0dfadef3ae001dab976adcaaa4c7b79d79d4838527bb53f1f00f9
-  fileSize: 1724000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/kickmaker/bundles/kickmaker-vst-win32.tar.xz
+  downloadSha256: 1cb45f561a7c7014542f283020093f431a053970187be51ae919ec13c5b05a96
+  fileSize: 1558832
 - name: MacOs VST
   targets:
   - mac
   formats:
   - vst
-  downloadUrl: https://central.owlplug.com/products/kickmaker/bundles/kickmaker-vst-osx.zip
-  downloadSha256: 6769d514f1b5106435bcaf7b129588af34e47cc27cb75b8e00ad5c76ebc6b5eb
-  fileSize: 1568000
+  downloadUrl: https://dropsnorz.com/owlplug-packages/kickmaker/bundles/kickmaker-vst-osx.tar.xz
+  downloadSha256: 80ee7c0d535ce3935da7fb7bf0b299110bbaff4a5566473a1768db1789eed64b
+  fileSize: 1686684

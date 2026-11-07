@@ -2,7 +2,7 @@
 name: Key Repeat
 creator: Michael Jan
 license: gpl-3.0
-screenshotUrl: https://central.owlplug.com/products/keyrepeat/keyrepeat.png
+screenshotUrl: https://dropsnorz.com/owlplug-packages/keyrepeat/keyrepeat.png
 description: |-
   Key Repeat is a free beat repeat sampler.
 
@@ -17,22 +17,22 @@ bundles:
   - win-x64
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-win64.zip
-  downloadSha256: caba9fedee28cc7a2f16b140ecb2ed8558fdb1157cbe8c836c97dd342130eb48
-  fileSize: 1880000
+  downloadUrl: https://github.com/michael-jan/key-repeat/releases/download/v1.0.0/Key-Repeat-1.0.0-Windows-VST3.zip
+  downloadSha256: 83035dc5c0ab471d5e51fe78a00c672a6d70d72d931c72a8f10b0025b46e7b71
+  fileSize: 1933137
 - name: OSX VST3
   targets:
   - mac
   formats:
   - vst3
-  downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-vst3-osx.zip
-  downloadSha256: a52484f7389668463fa4fb643eea028a1c5fbc67c7a4f776d085ba3b47748918
-  fileSize: 1366000
+  downloadUrl: https://github.com/michael-jan/key-repeat/releases/download/v1.0.0/Key-Repeat-1.0.0-macOS-VST3.zip
+  downloadSha256: 448ba023b89529cea58fa70fe078223ecfb3085677850f59d5e12fea18e911c1
+  fileSize: 1376064
 - name: OSX AU
   targets:
   - mac
   formats:
   - au
-  downloadUrl: https://central.owlplug.com/products/keyrepeat/bundles/keyrepeat-au-osx.zip
-  downloadSha256: 206ade4b269db8eaf231934dd8f2c4b9cb57207b36f1fc92f7d37e88f76542a1
-  fileSize: 1340000
+  downloadUrl: https://github.com/michael-jan/key-repeat/releases/download/v1.0.0/Key-Repeat-1.0.0-macOS-AU.zip
+  downloadSha256: a47e0ff24de8dc527bd9dec5f073306bdafb40f4d402ea49748dc9c83b321713
+  fileSize: 1387213
